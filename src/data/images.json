@@ -1,0 +1,37 @@
+[
+  {
+    "src": "/eva-lambert-cnap-paris-4.jpg",
+    "alt": "Image 1",
+    "orientation": "vertical"
+  },
+  {
+    "src": "eva-lambert-quart-devirage-nord-ouest-strasbourg-1.jpg",
+    "alt": "Image 2",
+    "orientation": "vertical"
+  },
+  {
+    "src": "eva-lambert-saint-eloi-marseille-1-2.jpg",
+    "alt": "Image 3",
+    "orientation": "vertical"
+  },
+  {
+    "src": "eva-lambert-wip17-arles-4.jpg",
+    "alt": "Image 4",
+    "orientation": "horizontal"
+  },
+  {
+    "src": "eva-lambert-wip19-arles-1.jpg",
+    "alt": "Image 5",
+    "orientation": "vertical"
+  },
+  {
+    "src": "eva-lambert-decorum-master-hear-strasbourg-1.jpg",
+    "alt": "Image 6",
+    "orientation": "horizontal"
+  },
+  {
+    "src": "eva-lambert-wip19-arles-3.jpg",
+    "alt": "Image 7",
+    "orientation": "horizontal"
+  }
+]
