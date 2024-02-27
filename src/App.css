@@ -1,3 +1,5 @@
+/* App.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -101,26 +103,16 @@ p {
   animation: rotate3d 13s infinite linear;
 }
 
-.swiper {
-  width: 100%;
+.sliderOne .swiper-slide img {
   height: 100%;
-}
-
-.swiper-slide img {
-  display: block;
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
-.swiper-slide {
-  width: 100%;
+.sliderOne  img.vertical {
+  width: auto;
 }
 
-.vertical {
-  width: 50% !important;
-}
-
-.horizontal {
-  width: 100% !important;
+.sliderOne img.horizontal {
+  height: 100%;
 }

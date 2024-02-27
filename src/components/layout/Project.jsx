@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useSliderVisibility } from "../features/slider/SliderVisibilityContext";
 import Accordion from "../features/accordion/Accordion";
 import ButtonIcon from "../common/icon/ButtonIcon";
-import { projects, infos } from "../../data/dataProject";
+import { projects} from "../../data/dataProject";
 import { motion, AnimatePresence } from "framer-motion";
 import About from "../features/About";
 

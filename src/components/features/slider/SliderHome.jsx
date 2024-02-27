@@ -1,11 +1,11 @@
-//Slider.jsx
+//SliderHome.jsx
 import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import imagesData from "../../../data/images.json";
 import Cursor from "../../common/cursor/Cursor";
 
-function Slider() {
+function SliderHome() {
   const [swiper, setSwiper] = useState(null);
   const [hoveredButton, setHoveredButton] = useState(null);
   const [opacity, setOpacity] = useState(0);
@@ -22,27 +22,25 @@ function Slider() {
     return () => clearTimeout(fadeEffect);
   }, []);
 
-
-
   return (
     <>
       <Swiper
         style={{ opacity: opacity, transition: "opacity 0.6s linear" }}
         loop={true}
-        spaceBetween={50}
+        spaceBetween={1500}
         slidesPerView={1}
-        speed={700}
+        speed={1200}
         onSwiper={(swiper) => setSwiper(swiper)}
-        className="h-full"
+        className="h-full sliderOne "
       >
         {imagesData.map((image, index) => (
-          <SwiperSlide key={index}>
-            {/* <img src={image.src} alt={image.alt} className="h-full w-auto" /> */}
+          <SwiperSlide key={index} className={`${image["position"]}`}>
             <img
               src={image.src}
               alt={image.alt}
-              className={image.orientation === "vertical" ? "vertical" : "horizontal"}
-
+              className={
+                image.orientation === "vertical" ? "vertical" : "horizontal"
+              }
             />
           </SwiperSlide>
         ))}
@@ -72,4 +70,4 @@ function Slider() {
   );
 }
 
-export default Slider;
+export default SliderHome;

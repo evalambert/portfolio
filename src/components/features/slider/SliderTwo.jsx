@@ -81,6 +81,7 @@ const SliderTwo = ({ images }) => {
 
 export default SliderTwo;
  */
+/*  */
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { useState, useEffect } from "react";

@@ -1,3 +1,39 @@
+
+/*
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.swiper-slide {
+  width: 100%;
+  display: flex;
+}
+img.vertical {
+  width: auto;
+}
+
+img.horizontal {
+  width: 100%;
+} 
+
+.right{
+  justify-content: flex-end;
+}
+.left{
+  justify-content: flex-start;
+}
+.center{
+  justify-content: flex-start;
+}
+ */
+
+
+
 /*  {activeSection === 'Info' && <Accordion items={infos} />} */
 
 
