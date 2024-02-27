@@ -1,8 +1,37 @@
-# React + Vite
+# 🎨 PORTFOLIO
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🔗 LIEN VERS LE PROJET
 
-Currently, two official plugins are available:
+[https://evalambert.github.io/portfolio/](https://evalambert.github.io/portfolio/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚧 ÉTAT D'AVANCEMENT
+
+En cours de création 🪵
+
+## 🚀 OBJECTIFS
+
+- Trouver un stage de deux mois en agence 🧃
+
+## 🌐 LANGUAGE UTILISÉ
+
+- Npm
+- React.js
+- Tailwind
+- Swiper
+- Framer motion
+
+## 💾 INSTALLATION
+
+```js
+npm i
+npm run dev
+npm run deploy
+```
+
+## 👀 MAQUETTE
+
+![Screen shot version Desktop](src/assets/images/maquette-1.jpg)
+![Screen shot version Desktop](src/assets/images/maquette-2.jpg)
+![Screen shot version Desktop](src/assets/images/maquette-3.jpg)
+![Screen shot version Desktop](src/assets/images/maquette-4.jpg)
+![Screen shot version Mobile](src/assets/images/maquette-5.jpg)
