@@ -1,4 +1,88 @@
 
+  /* import { useState } from "react";
+import { useSliderVisibility } from "../features/slider/SliderVisibilityContext";
+import Accordion from "../features/accordion/Accordion";
+import { projects } from "../../data/dataProject";
+import { motion, AnimatePresence } from "framer-motion";
+import About from "../features/About";
+import Nav from "../common/Nav";
+
+export default function Project({ className }) {
+  const { hideSlider, showSlider } = useSliderVisibility();
+  const [activeSection, setActiveSection] = useState("");
+
+  const handleSectionClick = (section) => {
+    setActiveSection(activeSection === section ? "" : section);
+    if (activeSection === section) {
+      showSlider();
+    } else {
+      hideSlider();
+    }
+  };
+
+  const handleCloseClick = () => {
+    setActiveSection("");
+    showSlider();
+  };
+
+  const borderClass = activeSection ? "border-t-[1px]" : "";
+  const sectionBackground = activeSection ? "bg-white" : "bg-transparent";
+
+
+  return (
+    <section className={`${className}${sectionBackground}`}>
+      <Nav
+        handleSectionClick={handleSectionClick}
+        handleCloseClick={handleCloseClick}
+        borderClass={borderClass}
+        activeSection={activeSection}
+      />
+      <AnimatePresence>
+        {activeSection && (
+          <motion.main
+            key={activeSection}
+            initial={{ height: 0 }}
+            animate={{ height: "auto" }}
+            exit={{ height: 0 }}
+            transition={{
+              height: { duration: 0.5, delay: 0.1 },
+            }}
+          >
+            {activeSection === "Index" && <Accordion items={projects} />}
+            {activeSection === "Info" && <About />}
+          </motion.main>
+        )}
+      </AnimatePresence>
+    </section>
+  );
+}
+ */
+
+
+
+
+// +++ Fade effect +++
+/*   useEffect(() => {
+    let fadeEffect = setTimeout(() => {
+      setOpacity(isSliderVisible ? 1 : 0);
+    }, 100); 
+    return () => clearTimeout(fadeEffect); 
+  }, [isSliderVisible]); 
+ */
+
+/*   useEffect(() => {
+    if (isSliderVisible) {
+      const fadeEffectIn = setTimeout(() => setOpacity(1), 0);
+      return () => clearTimeout(fadeEffectIn);
+    } else {
+      const fadeEffectOut = setTimeout(() => setOpacity(0), 0);
+      return () => clearTimeout(fadeEffectOut);
+    }
+  }, [isSliderVisible]); */
+
+
+
+
 /*
 .swiper {
   width: 100%;

@@ -1,5 +1,4 @@
 //Header.jsx
-
 const Header = ({ className }) => {
   const baseClasses = "fixed h-screen w-full bg-white p-[20px]";
   return (
