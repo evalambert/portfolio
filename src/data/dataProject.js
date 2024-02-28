@@ -14,12 +14,11 @@ export const projects = [
     ville: 'Arles',
     images:
       [
-        'eva-lambert-wip19-arles-3.jpg',
-        'eva-lambert-wip19-arles-5.jpg',
-        'eva-lambert-wip19-arles-2.jpg',
-        'eva-lambert-wip19-arles-4.jpg',
-        'eva-lambert-wip19-arles-9.jpg',
-
+        { src: 'eva-lambert-wip19-arles-3.jpg', type: 'image'},
+        { src: 'eva-lambert-wip19-arles-5.jpg', type: 'image'},
+        { src: 'eva-lambert-wip19-arles-2.jpg', type: 'image'},
+        { src: 'eva-lambert-wip19-arles-4.jpg', type: 'image'},
+        { src: 'eva-lambert-wip19-arles-9.jpg', type: 'image'},
       ]
   },
   {
@@ -32,10 +31,10 @@ export const projects = [
     ville: 'Paris',
     images:
       [
-        'eva-lambert-cnap-paris-1.jpg',
-        'eva-lambert-cnap-paris-2.jpg',
-        'eva-lambert-cnap-paris-3.jpg',
-        'eva-lambert-cnap-paris-4.jpg'
+        { src: 'eva-lambert-cnap-paris-1.jpg', type: 'image' },
+        { src: 'eva-lambert-cnap-paris-2.jpg', type: 'image' },
+        { src: 'eva-lambert-cnap-paris-3.jpg', type: 'image' },
+        { src: 'eva-lambert-cnap-paris-4.jpg', type: 'image' },
       ]
   },
 
@@ -60,9 +59,9 @@ export const projects = [
     ville: 'Paris',
     images:
       [
-        'eva-lambert-saint-eloi-marseille-1-2-ld.jpg',
-        'eva-lambert-saint-eloi-marseille-2.jpg',
-        'eva-lambert-saint-eloi-marseille-3.jpg',
+        { src:  'eva-lambert-saint-eloi-marseille-1-2.jpg', type: 'image' },
+        { src:  'eva-lambert-saint-eloi-marseille-2.jpg', type: 'image' },
+        { src:  'eva-lambert-saint-eloi-marseille-3.jpg', type: 'image' },
       ]
   }, 
   {
@@ -76,7 +75,7 @@ export const projects = [
     ville: 'Bruxelles',
     lien: 'https://jlbv-studio.com/',
     images: [
-      'eva-lambert-jlbv-bruxelles-1.jpg',
+      { src:  'eva-lambert-jlbv-bruxelles-1.jpg', type: 'image' },
     ]
   }, 
   {
@@ -88,8 +87,8 @@ export const projects = [
     client: 'Atelier Alain Willaume, HEAR Strasbourg',
     ville: 'Strasbourg',
     images: [
-      'eva-lambert-quart-devirage-nord-ouest-strasbourg-7.jpg',
-      'eva-lambert-quart-devirage-nord-ouest-strasbourg-1.jpg',
+      { src:  'eva-lambert-quart-devirage-nord-ouest-strasbourg-7.jpg', type: 'image' },
+      { src:  'eva-lambert-quart-devirage-nord-ouest-strasbourg-1.jpg', type: 'image' },
     ]
   },
   {
@@ -102,12 +101,11 @@ export const projects = [
     lien: 'https://apollinelamoril.com/',
     ville: 'Marseille',
     images: [
-      'Capture d’écran 2022-11-23 à 11.22.41.png',
+      { src: 'eva-lambert-apolline-lamoril-website-desktop.mp4', type: 'video' },
     ]
   },
   
 ];
-
 
 export const infos = [
   {
