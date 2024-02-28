@@ -27,12 +27,14 @@ export default function Project({ className }) {
   const backgroundClass = activeSection
     ? "bg-white transition-colors duration-100"
     : "";
+  const borderClass = activeSection ? "border-t-[1px]" : "";
 
   return (
     <section className={`${className} w-full px-[20px] ${backgroundClass}`}>
       <Nav
         handleSectionClick={handleSectionClick}
         handleCloseClick={handleCloseClick}
+        borderClass={borderClass}
         activeSection={activeSection}
       />
       <AnimatePresence>
