@@ -12,7 +12,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "AgrandirVariable";
   src: url("./assets/fonts/AgrandirVariable-Regular.woff2") format("woff2"),
@@ -22,14 +21,12 @@
   font-style: bold;
   font-display: swap;
 }
-
 @font-face {
   font-family: "AgrandirMedium";
   src: url("./assets/fonts/Agrandir-Medium.woff2") format("woff2"),
     url("./assets/fonts/Agrandir-Medium.woff") format("woff");
   font-weight: 500;
 }
-
 @font-face {
   font-family: "CartaNueva";
   src: url("./assets/fonts/CartaNueva-Deck.woff2") format("woff2"),
@@ -38,7 +35,6 @@
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
   font-family: "FK";
   src: url("./assets/fonts/Fk.woff2") format("woff2"),
@@ -52,14 +48,12 @@
 *::after {
   box-sizing: border-box;
 }
-
 html {
   font-family: "AgrandirVariable";
   font-variant-ligatures: common-ligatures;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 p {
   line-height: normal;
 }
@@ -73,11 +67,9 @@ p {
     transform: rotateY(360deg);
   }
 }
-
 .rotate3d-animation {
   animation: rotate3d 13s infinite linear;
 }
-
 
 /* SlideHome */
 .sliderHome .swiper-slide img {
@@ -85,14 +77,14 @@ p {
   width: 100%;
   object-fit: cover;
 }
-.sliderHome  img.vertical {
+.sliderHome img.vertical {
   width: auto;
 }
 .sliderHome img.horizontal {
   height: 100%;
 }
 
-/* Accordion projets */
+ /* Accordion projets */
 .accordion-content {
   overflow: hidden;
   transition: height 0.5s ease;

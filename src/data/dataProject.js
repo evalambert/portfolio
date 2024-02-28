@@ -15,12 +15,11 @@ export const projects = [
     images:
       [
         'eva-lambert-wip19-arles-3.jpg',
-        'eva-lambert-wip19-arles-1.jpg',
-        'eva-lambert-wip19-arles-4.jpg',
-        'eva-lambert-wip19-arles-2.jpg',
         'eva-lambert-wip19-arles-5.jpg',
-        'eva-lambert-wip19-arles-6.jpg',
-        'eva-lambert-wip19-arles-9.jpg', 
+        'eva-lambert-wip19-arles-2.jpg',
+        'eva-lambert-wip19-arles-4.jpg',
+        'eva-lambert-wip19-arles-9.jpg',
+
       ]
   },
   {
