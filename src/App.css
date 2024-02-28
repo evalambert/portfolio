@@ -85,11 +85,9 @@ p {
   width: 100%;
   object-fit: cover;
 }
-
 .sliderHome  img.vertical {
   width: auto;
 }
-
 .sliderHome img.horizontal {
   height: 100%;
 }
@@ -100,7 +98,6 @@ p {
   transition: height 0.5s ease;
   height: 0;
 }
-
 .accordion-content.open {
   height: 75vh;
 }
