@@ -7,8 +7,8 @@ import Project from "./components/layout/Project";
 const App = () => {
   return (
     <SliderVisibilityProvider>
-      <Home className="fixed w-full h-screen" />
-      <Project className="absolute bottom-[10px] left-0" />
+      <Home className="w-full h-screen fixed" />
+      <Project className="w-full absolute px-[20px] bottom-[10px] left-0" />
     </SliderVisibilityProvider>
   );
 };

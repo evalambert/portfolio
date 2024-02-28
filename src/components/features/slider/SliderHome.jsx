@@ -1,11 +1,11 @@
-//SliderHome.jsx
+// SliderHome.jsx
 import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import imagesData from "../../../data/images.json";
 import Cursor from "../../common/cursor/Cursor";
 
-function SliderHome() {
+function SliderHome({ isSliderVisible }) {
   const [swiper, setSwiper] = useState(null);
   const [hoveredButton, setHoveredButton] = useState(null);
   const [opacity, setOpacity] = useState(0);
@@ -16,16 +16,15 @@ function SliderHome() {
     }
   };
 
-  //  Fondu au chargement
+  // +++ Fade effect +++
   useEffect(() => {
-    const fadeEffect = setTimeout(() => setOpacity(1), 0);
-    return () => clearTimeout(fadeEffect);
-  }, []);
+    setOpacity(isSliderVisible ? 1 : 0);
+  }, [isSliderVisible]);
 
   return (
     <>
       <Swiper
-        style={{ opacity: opacity, transition: "opacity 0.6s linear" }}
+        style={{ opacity: opacity, transition: "opacity 0.5s linear" }}
         loop={true}
         spaceBetween={1500}
         slidesPerView={1}
