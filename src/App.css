@@ -60,36 +60,11 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.accordion-content {
-  overflow: hidden;
-  transition: height 0.5s ease;
-  height: 0;
-}
-
-.accordion-content.open {
-  height: 75vh;
-}
-
 p {
   line-height: normal;
 }
 
-/* CSS pour le premier slider */
-/* .first-slider .swiper-slide img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
- */
-/* CSS pour le second slider */
-/* .second-slider .swiper-slide img {
-  width: auto;
-  height: 600px;
-  object-fit: contain;
-  max-width: unset;
-}
-
- */
+/* Animation coeur */
 @keyframes rotate3d {
   from {
     transform: rotateY(0deg);
@@ -103,16 +78,29 @@ p {
   animation: rotate3d 13s infinite linear;
 }
 
-.sliderOne .swiper-slide img {
+
+/* SlideHome */
+.sliderHome .swiper-slide img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.sliderOne  img.vertical {
+.sliderHome  img.vertical {
   width: auto;
 }
 
-.sliderOne img.horizontal {
+.sliderHome img.horizontal {
   height: 100%;
+}
+
+/* Accordion projets */
+.accordion-content {
+  overflow: hidden;
+  transition: height 0.5s ease;
+  height: 0;
+}
+
+.accordion-content.open {
+  height: 75vh;
 }

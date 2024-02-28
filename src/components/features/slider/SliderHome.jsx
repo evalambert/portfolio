@@ -31,7 +31,7 @@ function SliderHome() {
         slidesPerView={1}
         speed={1200}
         onSwiper={(swiper) => setSwiper(swiper)}
-        className="h-full sliderOne "
+        className="sliderHome h-full"
       >
         {imagesData.map((image, index) => (
           <SwiperSlide key={index} className={`${image["position"]}`}>
