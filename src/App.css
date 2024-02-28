@@ -1,3 +1,5 @@
+/* App.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -58,36 +60,11 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.accordion-content {
-  overflow: hidden;
-  transition: height 0.5s ease;
-  height: 0;
-}
-
-.accordion-content.open {
-  height: 75vh;
-}
-
 p {
   line-height: normal;
 }
 
-/* CSS pour le premier slider */
-/* .first-slider .swiper-slide img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
- */
-/* CSS pour le second slider */
-/* .second-slider .swiper-slide img {
-  width: auto;
-  height: 600px;
-  object-fit: contain;
-  max-width: unset;
-}
-
- */
+/* Animation coeur */
 @keyframes rotate3d {
   from {
     transform: rotateY(0deg);
@@ -101,26 +78,26 @@ p {
   animation: rotate3d 13s infinite linear;
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
+/* SlideHome */
+.sliderHome .swiper-slide img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
-
-.swiper-slide {
-  width: 100%;
+.sliderHome  img.vertical {
+  width: auto;
+}
+.sliderHome img.horizontal {
+  height: 100%;
 }
 
-.vertical {
-  width: 50% !important;
+/* Accordion projets */
+.accordion-content {
+  overflow: hidden;
+  transition: height 0.5s ease;
+  height: 0;
 }
-
-.horizontal {
-  width: 100% !important;
+.accordion-content.open {
+  height: 75vh;
 }

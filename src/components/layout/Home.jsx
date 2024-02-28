@@ -1,8 +1,9 @@
 //Home.jsx
+
 import { useState, useEffect } from "react";
 import { useSliderVisibility } from "../features/slider/SliderVisibilityContext";
 import Header from "./Header";
-import Slider from "../features/slider/Slider";
+import SliderHome from "../features/slider/SliderHome";
 
 export default function Home({ className }) {
   const { isSliderVisible } = useSliderVisibility();
@@ -20,7 +21,7 @@ export default function Home({ className }) {
   return (
     <section className={`${className}`}>
       <Header />
-      {showSlider && <Slider />}
+      {showSlider && <SliderHome />}
     </section>
   );
 }

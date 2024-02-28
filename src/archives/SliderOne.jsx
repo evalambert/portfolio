@@ -69,3 +69,6 @@ function SliderOne() {
 }
 
 export default SliderOne;
+
+
+
