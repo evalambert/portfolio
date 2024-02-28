@@ -1,7 +1,7 @@
 //AccordionItem.jsx
 
 import React, { useState, useEffect } from "react";
-import SliderTwo from "../slider/SliderTwo";
+import SliderTwo from "../slider/SliderProject";
 import { motion } from "framer-motion";
 
 const AccordionItem = React.memo(
