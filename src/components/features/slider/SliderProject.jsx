@@ -33,9 +33,9 @@ const SliderProject = ({ images }) => {
             <SwiperSlide key={index}>
               {image.type === "image" ? (
                 <img src={image.src} alt={`Slide ${index}`} />
-              ) : (
-                <div style={{ aspectRatio: "7 / 5" }} className="bg-[#e7e7e8]">
-                  <video autoPlay loop muted className="p-[20px]">
+              ) : ( 
+                <div style={{ aspectRatio: "7 / 5" }} className="border border-black">
+                  <video autoPlay loop muted className="rounded-bl-[6px]">
                     <source src={image.src} type="video/mp4" />
                   </video>
                 </div>

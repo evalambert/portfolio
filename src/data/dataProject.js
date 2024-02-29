@@ -37,7 +37,6 @@ export const projects = [
         { src: 'eva-lambert-cnap-paris-4.jpg', type: 'image' },
       ]
   },
-
   {
     id: 3,
     title: 'Greta oto',
@@ -101,7 +100,7 @@ export const projects = [
     lien: 'https://apollinelamoril.com/',
     ville: 'Marseille',
     images: [
-      { src: 'eva-lambert-apolline-lamoril-website-desktop.mp4', type: 'video' },
+      { src: 'greta-oto-website-bruxelles-greta-oto.mp4', type: 'video' },
     ]
   },
   

@@ -20,7 +20,7 @@ const Nav = ({
           aria-label="Fermer la section"
         ></ButtonIcon>
         <button onClick={() => handleSectionClick("Index")}>Index</button>/
-        <button onClick={() => handleSectionClick("Info")}>Info</button>
+        <button onClick={() => handleSectionClick("Info")}>About</button>
       </nav>
       {activeSection ? (
         <ButtonIcon
@@ -30,7 +30,7 @@ const Nav = ({
           aria-label="Fermer"
         ></ButtonIcon>
       ) : (
-        <span className="col-start-12 col-end-13 flex justify-end">2024</span>
+        <span className="col-start-12 col-end-13 flex justify-end">2024©</span>
       )}
     </div>
   );
