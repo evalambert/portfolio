@@ -23,21 +23,23 @@ const AccordionItem = React.memo(
       return () => clearTimeout(timeoutId);
     }, [isOpen]);
 
-    const animateProps = isOpen ? { height: "70vh" } : { height: 0 };
+    const animateProps = isOpen ? { height: "63vh" } : { height: 0 };
 
     return (
       <li className="overflow-hidden">
         <button
           aria-expanded={isOpen}
-          className="w-full grid grid-cols-12 gap-0 border-t-[1px] border-black"
+          className="w-full grid grid-cols-4 border-t-[1px] border-black"
           onClick={onClick}
         >
-          <h2 className="col-start-1 col-end-7 text-center flex gap-4">
-            <span>{number}</span>
-            {title}
-          </h2>
-          <h3 className="col-start-7 col-end-11 text-left">{type}</h3>
-          <h3 className="col-start-12 col-end-13 text-right">{year}</h3>
+          <div className="col-span-2 grid grid-cols-[20px_1fr] gap-2 md:gap-3">
+            <h2 className="">{number}</h2>
+            <h2 className="text-left truncate overflow-hidden">{title}</h2>
+          </div>
+          <div className="col-span-2 grid grid-cols-[1fr_auto] gap-4">
+            <h3 className="text-left truncate overflow-hidden">{type}</h3>
+            <h3 className="text-right truncate overflow-hidden">{year}</h3>
+          </div>
         </button>
         <motion.article
           initial={initialProps}
@@ -45,9 +47,9 @@ const AccordionItem = React.memo(
           transition={{ duration: 0.3, ease: "linear" }}
         >
           {isContentVisible && (
-            <div className="h-full w-full flex py-3">
-              <p className="w-1/2">{content}</p>
-              <div className="w-1/2">
+            <div className="h-full w-full flex flex-col md:flex-row gap-4 py-3">
+              <p className="md:w-1/2">{content}</p>
+              <div className="md:w-1/2">
                 {images && Array.isArray(images) && (
                   <SliderTwo images={images} />
                 )}

@@ -46,7 +46,11 @@ export const projects = [
     client: 'Greta oto',
     ville: 'Bruxelles',
     lien: 'https://greta-oto.xyz/', 
-    images: [ 'eva-lambert-greta-oto-1.jpg']
+    images: 
+      [
+        { src: 'greta-oto-website-bruxelles-greta-oto.mp4', type: 'video' },
+      ]
+    
     },
   {
     id: 4,

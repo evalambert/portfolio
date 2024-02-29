@@ -1,6 +1,6 @@
 //Header.jsx
 const Header = ({ className }) => {
-  const baseClasses = "fixed h-screen w-full bg-white p-[20px]";
+  const baseClasses = "fixed h-screen w-full bg-white p-[10px] md:p-[20px]";
   return (
     <header className={`${baseClasses} ${className}`}>
       <h1 className="whitespace-nowrap font-AgrandirGrandBold text-[39px] uppercase leading-[40px] md:text-[80px] md:leading-[80px] lg:text-[104px] lg:leading-[105px] xl:text-[152px] xl:leading-[150px]">

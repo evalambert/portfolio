@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Cursor from "../../common/cursor/Cursor";
 
 import "swiper/css";
@@ -8,12 +8,22 @@ import { Autoplay } from "swiper/modules";
 const SliderProject = ({ images }) => {
   const [swiper, setSwiper] = useState(null);
   const [hoveredButton, setHoveredButton] = useState(null);
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 768);
 
   const handleImageChange = (direction) => {
     if (swiper && images.length > 1) {
       direction === "prev" ? swiper.slidePrev() : swiper.slideNext();
     }
   };
+
+  // +++ Mobile navigation +++
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <>
@@ -33,8 +43,11 @@ const SliderProject = ({ images }) => {
             <SwiperSlide key={index}>
               {image.type === "image" ? (
                 <img src={image.src} alt={`Slide ${index}`} />
-              ) : ( 
-                <div style={{ aspectRatio: "7 / 5" }} className="border border-black">
+              ) : (
+                <div
+                  style={{ aspectRatio: "7 / 5" }}
+                  className="border border-black"
+                >
                   <video autoPlay loop muted className="rounded-bl-[6px]">
                     <source src={image.src} type="video/mp4" />
                   </video>
@@ -43,7 +56,7 @@ const SliderProject = ({ images }) => {
             </SwiperSlide>
           );
         })}
-        {images.length > 1 && (
+        {!isMobile && images.length > 1 && (
           <>
             <button
               className="absolute left-0 top-0 z-10 h-full w-1/2 cursor-none"
@@ -60,7 +73,7 @@ const SliderProject = ({ images }) => {
           </>
         )}
       </Swiper>
-      {images.length > 1 && (
+      {!isMobile && images.length > 1 && (
         <Cursor
           text={
             hoveredButton === "prev"

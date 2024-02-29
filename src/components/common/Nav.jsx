@@ -10,27 +10,29 @@ const Nav = ({
 }) => {
   return (
     <div
-      className={`grid grid-cols-12 gap-0 text-white mix-blend-difference ${borderClass}`}
+      className={`grid grid-cols-4 text-white mix-blend-difference ${borderClass}`}
     >
-      <nav className="col-start-1 col-end-7 flex gap-x-[8px] ">
+      <nav className="col-span-2 grid grid-cols-[20px_1fr] gap-2 md:gap-3">
         <ButtonIcon
-          className="rotate3d-animation"
+          className="rotate3d-animation flex justify-center items-center"
           onClick={handleCloseClick}
           name="coeur"
           aria-label="Fermer la section"
         ></ButtonIcon>
-        <button onClick={() => handleSectionClick("Index")}>Index</button>/
-        <button onClick={() => handleSectionClick("Info")}>About</button>
+        <div className="flex gap-2">
+          <button onClick={() => handleSectionClick("Index")}>Index</button>/
+          <button onClick={() => handleSectionClick("Info")}>About</button>
+        </div>
       </nav>
       {activeSection ? (
         <ButtonIcon
-          className="col-start-12 col-end-13 flex justify-end items-center"
+          className="col-span-2 flex justify-end items-center"
           onClick={handleCloseClick}
           name="close"
           aria-label="Fermer"
         ></ButtonIcon>
       ) : (
-        <span className="col-start-12 col-end-13 flex justify-end">2024©</span>
+        <span className="col-span-2 flex justify-end">2024©</span>
       )}
     </div>
   );
