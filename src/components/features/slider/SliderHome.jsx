@@ -34,13 +34,23 @@ function SliderHome({ isSliderVisible }) {
       >
         {imagesData.map((image, index) => (
           <SwiperSlide key={index} className={`${image["position"]}`}>
-            <img
-              src={image.src}
-              alt={image.alt}
-              className={
-                image.orientation === "vertical" ? "vertical" : "horizontal"
-              }
-            />
+            {image.type === "image" ? (
+              <img
+                src={image.src}
+                alt={image.alt}
+                className={
+                  image.orientation === "vertical" ? "vertical" : "horizontal"
+                }
+              />
+            ) : (
+                <div className="flex items-center justify-center h-screen bg-black">
+                  <video autoPlay loop muted className="h-[90vh] border border-black rounded-[10px]">
+                <source src={image.src} type="video/mp4" />
+              </video>
+
+                </div>
+              
+            )}
           </SwiperSlide>
         ))}
       </Swiper>

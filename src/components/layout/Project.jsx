@@ -3,7 +3,7 @@ import { useSliderVisibility } from "../features/slider/SliderVisibilityContext"
 import Accordion from "../features/accordion/Accordion";
 import { projects } from "../../data/dataProject";
 import { motion, AnimatePresence } from "framer-motion";
-import About from "../features/About";
+import About from "./About";
 import Nav from "../common/Nav";
 
 export default function Project({ className }) {
@@ -37,7 +37,7 @@ export default function Project({ className }) {
       // Si aucune section active, attendre la fin de l'animation pour réinitialiser
       const timer = setTimeout(() => {
         setIsExiting(false);
-      }, 200); // Correspond à la durée totale de l'animation + délai
+      }, 200); // Durée totale animation + délai
       return () => clearTimeout(timer);
     }
   }, [activeSection]);
@@ -69,6 +69,7 @@ export default function Project({ className }) {
             transition={{
               height: { duration: 0.5, delay: 0.1 },
             }}
+            className="overflow-hidden"
           >
             {activeSection === "Index" && <Accordion items={projects} />}
             {activeSection === "Info" && <About />}

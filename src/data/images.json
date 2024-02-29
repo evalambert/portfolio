@@ -1,42 +1,56 @@
 [
   {
+    "type": "image",
     "src": "eva-lambert-cnap-paris-4.jpg",
     "alt": "Image 1",
     "orientation": "vertical",
     "position": "left"
   },
   {
+    "type": "image",
     "src": "eva-lambert-quart-devirage-nord-ouest-strasbourg-1.jpg",
     "alt": "Image 2",
     "orientation": "vertical",
     "position": "right"
   },
   {
+    "type": "image",
     "src": "eva-lambert-saint-eloi-marseille-1-2.jpg",
     "alt": "Image 3",
     "orientation": "vertical",
     "position": "left"
   },
   {
+    "type": "image",
     "src": "eva-lambert-wip17-arles-4.jpg",
     "alt": "Image 4",
     "orientation": "horizontal",
     "position": "center"
   },
   {
+    "type": "image",
     "src": "eva-lambert-wip19-arles-1.jpg",
     "alt": "Image 5",
     "orientation": "vertical", 
     "position": "right"
   },
   {
+    "type": "image",
     "src": "eva-lambert-decorum-master-hear-strasbourg-1.jpg",
     "alt": "Image 6",
     "orientation": "horizontal",
     "position": "center"
   },
   {
+    "type": "image",
     "src": "eva-lambert-wip19-arles-3.jpg",
+    "alt": "Image 7",
+    "orientation": "horizontal",
+    "position": "center"
+  },
+  {
+    "type": "video",
+    "src": "greta-oto-website-bruxelles-greta-oto.mp4",
     "alt": "Image 7",
     "orientation": "horizontal",
     "position": "center"
