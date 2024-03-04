@@ -23,7 +23,7 @@ const AccordionItem = React.memo(
       return () => clearTimeout(timeoutId);
     }, [isOpen]);
 
-    const animateProps = isOpen ? { height: "63vh" } : { height: 0 };
+    const animateProps = isOpen ? { height: "70vh" } : { height: 0 };
 
     return (
       <li className="overflow-hidden">
@@ -47,7 +47,7 @@ const AccordionItem = React.memo(
           transition={{ duration: 0.3, ease: "linear" }}
         >
           {isContentVisible && (
-            <div className="h-full w-full flex flex-col md:flex-row gap-4 py-3">
+            <div className="content-work h-full w-full flex flex-col md:flex-row gap-4 py-3">
               <p className="md:w-1/2">{content}</p>
               <div className="md:w-1/2">
                 {images && Array.isArray(images) && (
