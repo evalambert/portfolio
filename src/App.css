@@ -47,6 +47,14 @@ html {
   font-variant-ligatures: common-ligatures;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+  
 }
 p {
   line-height: normal;
