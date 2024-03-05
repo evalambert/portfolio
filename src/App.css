@@ -87,11 +87,11 @@ p {
 }
 
 /* Accordion projets */
-.accordion-content {
+/* .accordion-content {
   overflow: hidden;
   transition: height 0.5s ease;
   height: 0;
 }
 .accordion-content.open {
   height: 75vh;
-}
+} */

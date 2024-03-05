@@ -1,20 +1,17 @@
 export default function About() {
   return (
-    <article className="wrapper-about w-full h-[70vh] flex flex-col md:flex-row pt-3 gap-4 overflow-x-auto">
-      <div className="wrapper-txt w-full h-full md:w-1/2 flex flex-col gap-4 justify-between">
-        <section className="content-txt  flex flex-col gap-4">
+    <article className="wrapper-about  h-[90vh] flex flex-col pt-4 overflow-x-auto">
+      <div className="wrapper-txt h-full md:w-1/2 flex flex-col gap-4">
+        <section className="content-txt  flex flex-col gap-3">
           <p>
             French graphic designer and web developer based in Brussels,
-            Belgium.
-          </p>
-          <p>
-            Since earning my Master's degree in Visual Communication from HEAR,
-            Strasbourg in 2015, I have created visual identities, websites,
-            posters, editions, type designs, and artworks in collaboration with
-            cultural institutions, artists, businesses, and other enthusiasts.
-            Since 2022, I have been working under the name Greta Oto, a
-            multidisciplinary graphic design studio co-founded with Alice
-            Cadillon.
+            Belgium. Since earning my Master‘s degree in Graphic Design from
+            HEAR, Strasbourg in 2015, I have created visual identities,
+            websites, posters, editions, type designs, and artworks in
+            collaboration with cultural institutions, artists, businesses, and
+            other enthusiasts. Since 2022, I have been working under the name
+            Greta Oto, a multidisciplinary graphic design studio co-founded with
+            Alice Cadillon.
           </p>
           <p>
             Currently in web development training at BeCode, available for an
@@ -23,17 +20,17 @@ export default function About() {
           </p>
         </section>
         <section className="content-contact py-4 md:py-0">
-          <p className="flex gap-2">
-            ↗<a href="mailto:lamberteva@hotmail.fr">Email,</a>
+          <h3>Contact</h3>
+          <p className="flex flex-col">
+            <a href="mailto:lamberteva@hotmail.fr">info@evalambert.xyz</a>
             <a href="https://www.instagram.com/greta.oto__/?hl=fr">
-              Instagram,
+              @eva___lambert
             </a>
-            <a href="https://www.instagram.com/eva___lambert/">GitHub</a>
           </p>
         </section>
       </div>
 
-      <div className="wrapper-cv w-full md:w-1/2 flex flex-col">
+      {/*  <div className="wrapper-cv w-full md:w-1/2 flex flex-col">
         <section className="content-experience grid grid-cols-[80px_1fr] gap-4 border-t border-black">
         <h2>Experience</h2>
           <div>
@@ -41,8 +38,7 @@ export default function About() {
               <div className="grid grid-cols-[auto_1fr] gap-2">
                 <p>→</p>
                 <p>
-                  Co-founder of Greta Oto, a multidisciplinary graphic design
-                  studio
+                  Co-founder of Greta Oto, graphic design studio
                 </p>
               </div>
               <p>2022</p>
@@ -59,7 +55,7 @@ export default function About() {
         <section className="content-degrees grid grid-cols-[80px_1fr] gap-4 border-t border-black">
           <h2>Degrees</h2>
           <div>
-            <section className=" grid grid-cols-[1fr_auto] gap-4">
+            <section className="grid grid-cols-[1fr_auto] gap-4">
               <div className="grid grid-cols-[auto_1fr] gap-2">
                 <p>→</p>
                 <p>Master's Degree in Graphic Communication, HEAR Strasbourg</p>
@@ -98,7 +94,7 @@ export default function About() {
             </section>
           </div>
         </section>
-      </div>
+      </div> */}
     </article>
   );
 }
