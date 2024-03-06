@@ -13,7 +13,6 @@ const AccordionItem = React.memo(
     year,
     content,
     client,
-    lien,
     href,
     ville,
     isOpen,

@@ -156,6 +156,14 @@ export const projects = [
     lien: 'My Github page',
     client: 'BeCode',
     href: 'https://github.com/evalambert',
+    images:
+    [
+      { src: 'eva-lambert-wip19-arles-3.jpg', type: 'image' },
+      { src: 'eva-lambert-wip19-arles-5.jpg', type: 'image' },
+      { src: 'eva-lambert-wip19-arles-2.jpg', type: 'image' },
+      { src: 'eva-lambert-wip19-arles-4.jpg', type: 'image' },
+      { src: 'eva-lambert-wip19-arles-9.jpg', type: 'image' },
+    ]
   },
   {
     id: 11,
@@ -166,6 +174,14 @@ export const projects = [
     ville: 'Strasbourg',
     client: '1914, La mort des poètes',
     href: 'https://github.com/evalambert',
+    images:
+    [
+      { src: 'eva-lambert-wip19-arles-3.jpg', type: 'image' },
+      { src: 'eva-lambert-wip19-arles-5.jpg', type: 'image' },
+      { src: 'eva-lambert-wip19-arles-2.jpg', type: 'image' },
+      { src: 'eva-lambert-wip19-arles-4.jpg', type: 'image' },
+      { src: 'eva-lambert-wip19-arles-9.jpg', type: 'image' },
+    ]
   }
  
 ];
@@ -178,6 +194,14 @@ export const infos = [
     client: 'Jules Bouchier-Végis',
     ville: 'Bruxelles',
     lien: 'https://jlbv-studio.com/',
-    video: 'eva-lambert-jlbv-studio-bruxelles-1.jpg'
+    video: 'eva-lambert-jlbv-studio-bruxelles-1.jpg',
+    images:
+    [
+      { src: 'eva-lambert-wip19-arles-3.jpg', type: 'image' },
+      { src: 'eva-lambert-wip19-arles-5.jpg', type: 'image' },
+      { src: 'eva-lambert-wip19-arles-2.jpg', type: 'image' },
+      { src: 'eva-lambert-wip19-arles-4.jpg', type: 'image' },
+      { src: 'eva-lambert-wip19-arles-9.jpg', type: 'image' },
+    ]
   },
 ];

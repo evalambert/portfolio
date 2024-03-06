@@ -28,13 +28,13 @@
 }
 @font-face {
   font-family: "CartaNueva";
-  src: url("assets/fonts/CartaNueva-Deck.woff2") format("woff2");
-  src: url("assets/fonts/CartaNueva-Deck.otf") format("opentype");
+  src: url("assets/fonts/CartaNueva-Deck.woff2") format("woff2"),
+  url("assets/fonts/CartaNueva-Deck.woff") format("woff");
 }
 @font-face {
   font-family: "FK";
-  src: url("assets/fonts/Fk.woff2") format("woff2"),""
-    url("assets/fonts/Fk.woff") format("woff");
+  src: url("assets/fonts/FK.woff2") format("woff2"),
+    url("assets/fonts/FK.woff") format("woff");
 }
 
 *,
@@ -43,7 +43,7 @@
   box-sizing: border-box;
 }
 html {
-  font-family: "AgrandirVariable", Helvetica, sans-serif;
+  font-family: "AgrandirVariable";
   font-variant-ligatures: common-ligatures;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -54,44 +54,7 @@ html {
   html {
     font-size: 15px;
   }
-  
 }
 p {
   line-height: normal;
 }
-
-/* Animation coeur */
-@keyframes rotate3d {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(360deg);
-  }
-}
-.rotate3d-animation {
-  animation: rotate3d 13s infinite linear;
-}
-
-/* SlideHome */
-.sliderHome .swiper-slide img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.sliderHome img.vertical {
-  width: auto;
-}
-.sliderHome img.horizontal {
-  height: 100%;
-}
-
-/* Accordion projets */
-/* .accordion-content {
-  overflow: hidden;
-  transition: height 0.5s ease;
-  height: 0;
-}
-.accordion-content.open {
-  height: 75vh;
-} */
