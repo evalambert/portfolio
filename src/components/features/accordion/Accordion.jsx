@@ -23,6 +23,10 @@ const Accordion = ({ items }) => {
           images={item.images}
           title={item.title}
           content={item.content}
+          lien={item.lien}
+          href={item.href}
+          ville={item.ville}
+          client={item.client}
           isOpen={openItemId === item.id}
           onClick={() => toggleItem(item.id)}
         />

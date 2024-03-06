@@ -1,6 +1,7 @@
 // SliderHome.jsx
 import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import './Slider.css'
 import "swiper/css";
 import imagesData from "../../../data/images.json";
 import Cursor from "../../common/cursor/Cursor";

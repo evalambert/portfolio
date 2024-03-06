@@ -1,3 +1,5 @@
+import './Icon.css';
+
 const Icon = ({ name }) => {
   const icons = {
     coeur: (

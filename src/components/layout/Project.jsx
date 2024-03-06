@@ -58,7 +58,6 @@ export default function Project({ className }) {
         borderClass={borderClass}
       />
       <AnimatePresence onExitComplete={() => setIsExiting(false)}>
-        {" "}
         {/* Réinitialisation de isExiting à la fin de l'animation de sortie */}
         {activeSection && (
           <motion.main
@@ -69,7 +68,7 @@ export default function Project({ className }) {
             transition={{
               height: { duration: 0.5, delay: 0.1 },
             }}
-            className="overflow-hidden"
+            className="overflow-scroll"
           >
             {activeSection === "Index" && <Accordion items={projects} />}
             {activeSection === "Info" && <About />}

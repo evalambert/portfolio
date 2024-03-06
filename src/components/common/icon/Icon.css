@@ -1,0 +1,12 @@
+/* Animation Icon */
+@keyframes rotate3d {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  .rotate3d-animation {
+    animation: rotate3d 13s infinite linear;
+  }
