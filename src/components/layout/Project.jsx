@@ -63,7 +63,7 @@ export default function Project({ className }) {
           <motion.main
             key={activeSection}
             initial={{ height: 0 }}
-            animate={{ height: "auto" }}
+            animate={{ height: "90vh" }}
             exit={{ height: 0 }}
             transition={{
               height: { duration: 0.5, delay: 0.1 },
