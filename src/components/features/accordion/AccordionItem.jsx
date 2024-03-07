@@ -12,9 +12,6 @@ const AccordionItem = React.memo(
     images,
     year,
     content,
-    client,
-    href,
-    ville,
     isOpen,
     onClick,
   }) => {
@@ -42,6 +39,28 @@ const AccordionItem = React.memo(
     // Propriétés d'animation basées sur l'état ouvert/fermé
     const animateProps = isOpen ? { height: contentHeight } : { height: 0 };
 
+    // Fonction formatage texte souligné
+    function formatText(content) {
+      // Séparation du texte en segments basés sur les marqueurs
+      const parts = content.split(/(\[\[|\]\])/);
+      let isHighlighted = false; // Indicateur pour savoir si on est dans une portion à souligner
+      const formattedParts = parts.map((part, index) => {
+        if (part === '[[') {
+          isHighlighted = true; // Début d'une portion à souligner
+          return null; // On ne rend rien pour le marqueur lui-même
+        } else if (part === ']]') {
+          isHighlighted = false; // Fin d'une portion à souligner
+          return null; // On ne rend rien pour le marqueur lui-même
+        } else if (isHighlighted) {
+          return <span className="border-b border-black" key={index}>{part}</span>; // Rendre la portion soulignée
+        } else {
+          return part; // Rendre le texte normal
+        }
+      });
+    
+      return <>{formattedParts}</>; // Rendre le tout comme un fragment React
+    }
+
     return (
       <li className="overflow-hidden">
         <button
@@ -64,22 +83,20 @@ const AccordionItem = React.memo(
           initial={initialProps} // Propriétés initiales pour l'animation
           animate={animateProps} // Animation à la hauteur spécifiée
           transition={{ duration: 0.3, ease: "linear" }}
-          className="overflow-scroll"
+          className="overflow-scroll md:overflow-hidden"
         >
           {isContentVisible && ( // Afficher le contenu si visible
             <div className="content-work h-full w-full flex flex-col md:flex-row gap-4 py-3">
               <div className="md:w-1/2 flex flex-col gap-4">
-                <p>{content}</p>
-
-                <p>
+              <p>{formatText(content)}</p>
+                {/* <p>
                   <a className="border-b border-black" href={href}>
                     {client}
                   </a>
                   {`, ${ville}`}
-                </p>
+                </p> */}
               </div>
-
-              <div className="md:w-1/2">
+              <div className="md:w-1/2 md:overflow-scroll">
                 {images && Array.isArray(images) && (
                   <SliderTwo images={images} />
                 )}
