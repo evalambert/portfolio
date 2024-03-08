@@ -96,7 +96,7 @@ const AccordionItem = React.memo(
                   {`, ${ville}`}
                 </p> */}
               </div>
-              <div className="md:w-1/2 md:overflow-scroll">
+              <div className="md:w-1/2 md:overflow-hidden">
                 {images && Array.isArray(images) && (
                   <SliderTwo images={images} />
                 )}
