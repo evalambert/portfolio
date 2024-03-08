@@ -37,15 +37,18 @@ const SliderProject = ({ images }) => {
         speed={700}
         onSwiper={(swiper) => setSwiper(swiper)}
         modules={[Autoplay]}
+        className="h-full w-auto"
       >
         {images.map((image, index) => {
           return (
             <SwiperSlide key={index}>
               {image.type === "image" ? (
-                <img src={image.src} alt={`Slide ${index}`} />
+                <img
+                  className="h-full w-full object-cover"
+                  src={image.src} alt={`Slide ${index}`} />
               ) : (
                 <div
-                  style={{ aspectRatio: "7 / 5" }}
+                  /* style={{ aspectRatio: "7 / 5" }} */
                   className="border border-black"
                 >
                   <video autoPlay loop muted className="rounded-bl-[6px]">

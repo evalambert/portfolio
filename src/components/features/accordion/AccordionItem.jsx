@@ -89,14 +89,8 @@ const AccordionItem = React.memo(
             <div className="content-work h-full w-full flex flex-col md:flex-row gap-4 py-3">
               <div className="md:w-1/2 flex flex-col gap-4">
               <p>{formatText(content)}</p>
-                {/* <p>
-                  <a className="border-b border-black" href={href}>
-                    {client}
-                  </a>
-                  {`, ${ville}`}
-                </p> */}
               </div>
-              <div className="md:w-1/2 md:overflow-scroll">
+              <div className="md:w-1/2">
                 {images && Array.isArray(images) && (
                   <SliderTwo images={images} />
                 )}
