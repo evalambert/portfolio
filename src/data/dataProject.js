@@ -94,7 +94,7 @@ export const projects = [
     href: 'https://apollinelamoril.com/',
     lien: 'www.apollinelamoril.com',
     images: [
-      { src: 'eva-lambert-apolline-lamoril-website-desktop.mp4', type: 'video' },
+      { src: 'eva-lambert-apolline-lamoril-website.mp4', type: 'video' },
     ]
   },
   {
@@ -158,25 +158,4 @@ export const projects = [
       { src: 'eva-lambert-la-marche-des-monuments-strasbourg-2.jpg', type: 'image' },
     ]
   }
- 
-];
-
-export const infos = [
-  {
-    id: 1,
-    title: 'Eva Lambert',
-    content: 'cdcd',
-    client: 'Jules Bouchier-Végis',
-    ville: 'Bruxelles',
-    lien: 'https://jlbv-studio.com/',
-    video: 'eva-lambert-jlbv-studio-bruxelles-1.jpg',
-    images:
-    [
-      { src: 'eva-lambert-wip19-arles-3.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-5.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-2.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-4.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-9.jpg', type: 'image' },
-    ]
-  },
 ];
