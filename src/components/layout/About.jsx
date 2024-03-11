@@ -4,29 +4,25 @@ export default function About() {
       <div className="wrapper-txt h-full md:w-1/2 flex flex-col gap-4">
         <section className="content-txt  flex flex-col gap-3">
           <p>
-            French graphic designer and web developer based in Brussels,
-            Belgium. Since earning my Master‘s degree in Graphic Design from
-            HEAR, Strasbourg in 2015, I have created visual identities,
-            websites, posters, editions, type designs, and artworks in
-            collaboration with cultural institutions, artists, businesses, and
-            other enthusiasts. Since 2022, I have been working under the name
-            Greta Oto, a multidisciplinary graphic design studio co-founded with
-            Alice Cadillon.
+            I am a French graphic designer and creative web developer based in
+            Brussels. After graduating with a Master’s degree in Graphic Design
+            from HEAR, Strasbourg, in 2015, I have collaborated with cultural institutions, artists and others enthusiasts to develop visual identity, both
+            printed and digital matter. Since 2022, I have been part
+            of Greta Oto, a multidisciplinary graphic design studio, co-founded
+            with Alice Cadillon, who is interested in the performative potential of graphic objects
           </p>
           <p>
-            Currently in web development training at BeCode, available for an
-            internship at a company starting in April. For more information,
-            please get in touch.
+            I am currently enhancing my web development skills at BeCode, and am seeking an internship opportunity starting in April.
           </p>
         </section>
         <section className="content-contact py-4 md:py-0">
           <h3>Contact</h3>
           <p>
-            <a href="mailto:lamberteva@hotmail.fr">info@evalambert.xyz</a>
+            <a href="mailto:lamberteva@hotmail.fr">evalambert@hotmail.fr</a>
           </p>
           <p>
             <a href="https://www.instagram.com/greta.oto__/?hl=fr">
-              @eva___lambert
+              @greta.oto__
             </a>
           </p>
         </section>
