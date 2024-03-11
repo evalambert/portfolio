@@ -46,9 +46,9 @@ const SliderProject = ({ images }) => {
               ) : (
                 <div
                   style={{ aspectRatio: "7 / 5" }}
-                  className="border border-black"
+                  className="p-5 bg-black"
                 >
-                  <video autoPlay loop muted className="rounded-bl-[6px]">
+                  <video autoPlay loop muted className="rounded-[6px]">
                     <source src={image.src} type="video/mp4" />
                   </video>
                 </div>

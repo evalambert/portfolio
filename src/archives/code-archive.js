@@ -1,4 +1,10 @@
 
+/* I'm a French graphic designer and creative web developer based in Brussels, Belgium. Since obtaining my Graphic Design Master's degree from HEAR, Strasbourg in 2015, I have created visual identities, websites, posters, editions, type designs, and artworks in collaboration with cultural institutions, artists, businesses, and other enthusiasts. Since 2022, I have been working under the name Greta Oto, a multidisciplinary graphic design studio co-founded with Alice Cadillon.
+</p>
+<p>
+Currently in web development training at BeCode. I am looking for an internship opportunity starting in April.  */
+  
+  
   /* import { useState } from "react";
 import { useSliderVisibility } from "../features/slider/SliderVisibilityContext";
 import Accordion from "../features/accordion/Accordion";

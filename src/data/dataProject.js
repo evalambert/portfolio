@@ -8,11 +8,12 @@ export const projects = [
     content: 'Design for ENSP students‘ exhibition during Les Rencontres de la photographie, in collaboration with Paul Cabanes, scenography by Elizabeth Guyon. [[AE ENSP]], Arles',
     images:
       [
-        { src: 'eva-lambert-wip19-arles-3.jpg', type: 'image' },
-        { src: 'eva-lambert-wip19-arles-5.jpg', type: 'image' },
-        { src: 'eva-lambert-wip19-arles-2.jpg', type: 'image' },
-        { src: 'eva-lambert-wip19-arles-4.jpg', type: 'image' },
-        { src: 'eva-lambert-wip19-arles-9.jpg', type: 'image' },
+        { src: 'eva-lambert-wip-19-arles-3.jpg', type: 'image' },
+        { src: 'eva-lambert-wip-19-arles-1.jpg', type: 'image' },
+        { src: 'eva-lambert-wip-19-arles-2.jpg', type: 'image' },
+        { src: 'eva-lambert-wip-19-arles-4.jpg', type: 'image' },
+        { src: 'eva-lambert-wip-19-arles-5.jpg', type: 'image' },
+        { src: 'eva-lambert-wip-19-arles-6.jpg', type: 'image' },
       ]
   },
   {
@@ -23,11 +24,10 @@ export const projects = [
     content: 'Booklet presentation of the [[Centre national des arts plastiques]], in collaboration with Paul Cabanes, Paris',
     images:
     [
-      { src: 'eva-lambert-wip19-arles-3.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-5.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-2.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-4.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-9.jpg', type: 'image' },
+        { src: 'eva-lambert-cnap-paris-1.jpg', type: 'image' },
+        { src: 'eva-lambert-cnap-paris-2.jpg', type: 'image' },
+        { src: 'eva-lambert-cnap-paris-3.jpg', type: 'image' },
+        { src: 'eva-lambert-cnap-paris-4.jpg', type: 'image' },
     ]
   },
   {
@@ -52,11 +52,11 @@ export const projects = [
     content: 'Invitation for the celebration of St Éloi, in collaboration with Jules Bouchier-Végis. [[Union des métalliers de France]], Paris',
     images:
     [
-      { src: 'eva-lambert-wip19-arles-3.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-5.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-2.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-4.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-9.jpg', type: 'image' },
+        { src: 'eva-lambert-saint-eloi-marseille-1.jpg', type: 'image' },
+        { src: 'eva-lambert-saint-eloi-marseille-2.jpg', type: 'image' },
+        { src: 'eva-lambert-saint-eloi-marseille-6.jpg', type: 'image' },
+        { src: 'eva-lambert-saint-eloi-marseille-7.jpg', type: 'image' },
+
     ]
   }, 
   {
@@ -64,38 +64,37 @@ export const projects = [
     title: 'JLBV Studio',
     type: 'Web design, development',
     year: '2024',
-    content: 'Currently in progress: Designing and developing the website for [[JLBV Studio]], Bruxelles',
+    content: 'Designing and developing the website for [[Jules Bouchier-Végis]], Bruxelles',
     lien: 'www.jlbv-studio.com',
     href: 'https://jlbv-studio.com/',
     images: [
-      { src: 'greta-oto-website-bruxelles-greta-oto.mp4', type: 'video' },
+      { src: 'eva-lambert-website-jules-bouchier-vegis-jlbv-studio-bruxelle.mp4', type: 'video' },
     ]
   }, 
   {
     id: 6,
     title: 'Quard de virage nord-ouest',
     type: 'Publication, photography',
-    year: '2019',
+    year: '2014',
     content: 'Close-up of the Ultra Boys 90 in the stadium stands of [[Racing Club]] of Strasbourg',
     images:
     [
-      { src: 'eva-lambert-wip19-arles-3.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-5.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-2.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-4.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-9.jpg', type: 'image' },
+      { src: 'eva-lambert-quart-devirage-nord-ouest-strasbourg-1.jpg', type: 'image' },
+      { src: 'eva-lambert-quart-devirage-nord-ouest-strasbourg-5.jpg', type: 'image' },
+      { src: 'eva-lambert-quart-devirage-nord-ouest-strasbourg-3.jpg', type: 'image' },
+      { src: 'eva-lambert-quart-devirage-nord-ouest-strasbourg-4.jpg', type: 'image' },      
     ]
   },
   {
     id: 7,
     title: 'Apolline Lamoril',
     type: 'Web design, development',
-    year: '2019',
+    year: '2022',
     content:'Website for the artist [[Apolline Lamoril]], Marseille', 
     href: 'https://apollinelamoril.com/',
     lien: 'www.apollinelamoril.com',
     images: [
-      { src: 'greta-oto-website-bruxelles-greta-oto.mp4', type: 'video' },
+      { src: 'eva-lambert-apolline-lamoril-website-desktop.mp4', type: 'video' },
     ]
   },
   {
@@ -106,11 +105,11 @@ export const projects = [
     content: 'Design for ENSP students‘ exhibition during Les Rencontres de la photographie, in collaboration with Paul Cabanes, scenography by Elizabeth Guyon. [[AE ENSP]], Arles',
     images:
     [
-      { src: 'eva-lambert-wip19-arles-3.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-5.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-2.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-4.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-9.jpg', type: 'image' },
+      { src: 'eva-lambert-wip-17-arles-1.jpg', type: 'image' },
+      { src: 'eva-lambert-wip-17-arles-2.jpg', type: 'image' },
+      { src: 'eva-lambert-wip-17-arles-3.jpg', type: 'image' },
+      { src: 'eva-lambert-wip-17-arles-4.jpg', type: 'image' },
+
     ]
   }, 
   {
@@ -121,11 +120,13 @@ export const projects = [
     content: 'Reproduction and reactivation of filmic objects. Master‘s degree in Graphic Communication from [[HEAR]], Strasbourg', 
     images:
     [
-      { src: 'eva-lambert-wip19-arles-3.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-5.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-2.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-4.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-9.jpg', type: 'image' },
+      { src: 'eva-lambert-decorum-master-hear-strasbourg-1.jpg', type: 'image' },
+      { src: 'eva-lambert-decorum-master-hear-strasbourg-2.jpg', type: 'image' },
+      { src: 'eva-lambert-decorum-master-hear-strasbourg-3.jpg', type: 'image' },
+      { src: 'eva-lambert-decorum-master-hear-strasbourg-4.jpg', type: 'image' },
+      { src: 'eva-lambert-decorum-master-hear-strasbourg-5.jpg', type: 'image' },
+      { src: 'eva-lambert-decorum-master-hear-strasbourg-6.jpg', type: 'image' },
+      { src: 'eva-lambert-decorum-master-hear-strasbourg-7.jpg', type: 'image' },
     ]
   },
   {
@@ -138,11 +139,10 @@ export const projects = [
     href: 'https://github.com/evalambert',
     images:
     [
-      { src: 'eva-lambert-wip19-arles-3.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-5.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-2.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-4.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-9.jpg', type: 'image' },
+      { src: 'becode-training-brm-cinema-bruxelles.mp4', type: 'video' },
+      { src: 'becode-training-funnyfur-social-media-bruxelles-3.mp4', type: 'video' },
+      { src: 'becode-training-hot-doog-restaurant-bruxelles.mp4', type: 'video' },
+      { src: 'becode-training-poddle-clicker-bruxelles.mp4', type: 'video' },
     ]
   },
   {
@@ -154,11 +154,8 @@ export const projects = [
     href: 'https://github.com/evalambert',
     images:
     [
-      { src: 'eva-lambert-wip19-arles-3.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-5.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-2.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-4.jpg', type: 'image' },
-      { src: 'eva-lambert-wip19-arles-9.jpg', type: 'image' },
+      { src: 'eva-lambert-la-marche-des-monuments-strasbourg-1.jpg', type: 'image' },
+      { src: 'eva-lambert-la-marche-des-monuments-strasbourg-2.jpg', type: 'image' },
     ]
   }
  

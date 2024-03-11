@@ -8,6 +8,8 @@ const AccordionItem = React.memo(
   ({
     number,
     type,
+    lien,
+    href,
     title,
     images,
     year,
@@ -89,14 +91,13 @@ const AccordionItem = React.memo(
             <div className="content-work h-full w-full flex flex-col md:flex-row gap-4 py-3">
               <div className="md:w-1/2 flex flex-col gap-4">
               <p>{formatText(content)}</p>
-                {/* <p>
+                <p>
                   <a className="border-b border-black" href={href}>
-                    {client}
+                    {lien}
                   </a>
-                  {`, ${ville}`}
-                </p> */}
+                </p>
               </div>
-              <div className="md:w-1/2 md:overflow-hidden">
+              <div className="md:w-1/2 md:overflow-hidde">
                 {images && Array.isArray(images) && (
                   <SliderTwo images={images} />
                 )}
