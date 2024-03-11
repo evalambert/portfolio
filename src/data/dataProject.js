@@ -94,7 +94,7 @@ export const projects = [
     href: 'https://apollinelamoril.com/',
     lien: 'www.apollinelamoril.com',
     images: [
-      { src: 'eva-lambert-apolline-lamoril-website-desktop.mp4', type: 'video' },
+      { src: 'eva-lambert-apolline-lamoril-website.mp4', type: 'video' },
     ]
   },
   {
