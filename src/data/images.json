@@ -1,57 +1,72 @@
 [
   {
     "type": "image",
-    "src": "eva-lambert-cnap-paris-4.jpg",
-    "alt": "Image 1",
+    "src": "eva-lambert-cnap-paris-1-1.jpg",
+    "alt": "Cnap booklet, Paris",
     "orientation": "vertical",
     "position": "left"
   },
   {
     "type": "image",
-    "src": "eva-lambert-quart-devirage-nord-ouest-strasbourg-1.jpg",
-    "alt": "Image 2",
-    "orientation": "vertical",
+    "src": "eva-lambert-wip-19-arles-1-1.jpg",
+    "alt": " WIP#19 Exhibition, Arles",
+    "orientation": "horizontal",
     "position": "right"
   },
   {
+    "type": "video",
+    "src": "greta-oto-website-bruxelles-greta-oto.mp4",
+    "alt": "Greta oto website, Bruxelles",
+    "orientation": "horizontal",
+    "position": "center"
+  },
+  {
     "type": "image",
-    "src": "eva-lambert-saint-eloi-marseille-1-2.jpg",
-    "alt": "Image 3",
+    "src": "eva-lambert-saint-eloi-marseille-1-1.jpg",
+    "alt": "Saint Eloi, Marseille",
     "orientation": "vertical",
     "position": "left"
   },
   {
     "type": "image",
-    "src": "eva-lambert-wip17-arles-4.jpg",
-    "alt": "Image 4",
+    "src": "eva-lambert-decorum-master-hear-strasbourg-1-1.jpg",
+    "alt": "Decorum Master, HEAR Strasbourg",
     "orientation": "horizontal",
     "position": "center"
   },
   {
     "type": "image",
-    "src": "eva-lambert-wip19-arles-1.jpg",
-    "alt": "Image 5",
-    "orientation": "vertical", 
-    "position": "right"
-  },
-  {
-    "type": "image",
-    "src": "eva-lambert-decorum-master-hear-strasbourg-1.jpg",
-    "alt": "Image 6",
-    "orientation": "horizontal",
-    "position": "center"
-  },
-  {
-    "type": "image",
-    "src": "eva-lambert-wip19-arles-3.jpg",
-    "alt": "Image 7",
+    "src": "eva-lambert-wip-17-arles-1-1.jpg",
+    "alt": "WIP#17 Exhibition, Arles",
     "orientation": "horizontal",
     "position": "center"
   },
   {
     "type": "video",
-    "src": "greta-oto-website-bruxelles-greta-oto.mp4",
-    "alt": "Image 7",
+    "src": "eva-lambert-apolline-lamoril-website.mp4",
+    "alt": "Apolline Lamoril website",
+    "orientation": "horizontal",
+    "position": "center"
+  },
+  {
+    "type": "image",
+    "src": "eva-lambert-quart-devirage-nord-ouest-strasbourg-1-1.jpg",
+    "alt": "Quart de virage nord-ouest, Strasbourg",
+    "orientation": "vertical",
+    "position": "right"
+  },
+  
+  {
+    "type": "video",
+    "src": "eva-lambert-website-jules-bouchier-vegis-jlbv-studio-bruxelle.mp4",
+    "alt": "Jules Bouchier Vegis website, Bruxelles",
+    "orientation": "horizontal",
+    "position": "center"
+  },
+  {
+    "type": "image",
+    "src": "eva-lambert-la-marche-des-monuments-strasbourg-1-1.jpg",
+    "alt": "La marche des monuments, Strasbourg",
     "orientation": "horizontal",
     "position": "center"
   }
