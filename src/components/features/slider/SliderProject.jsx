@@ -10,6 +10,7 @@ const SliderProject = ({ images }) => {
   const [hoveredButton, setHoveredButton] = useState(null);
   const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 768);
 
+  // +++ Image chang +++
   const handleImageChange = (direction) => {
     if (swiper && images.length > 1) {
       direction === "prev" ? swiper.slidePrev() : swiper.slideNext();
@@ -25,18 +26,21 @@ const SliderProject = ({ images }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // +++ Vérifier si toutes les entrées sont des vidéos pour annuler l'autoplay du slide +++
+  const allVideos = images.every(image => image.type === 'video');
+
   return (
     <>
       <Swiper
         loop={images.length > 1}
         spaceBetween={0}
-        autoplay={{
+        modules={[Autoplay]}
+        autoplay={!allVideos ? {
           delay: 3000,
           disableOnInteraction: false,
-        }}
+        } : false} // Désactive l'autoplay si toutes les entrées sont des vidéos
         speed={700}
         onSwiper={(swiper) => setSwiper(swiper)}
-        modules={[Autoplay]}
       >
         {images.map((image, index) => {
           return (
