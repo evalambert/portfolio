@@ -26,8 +26,9 @@ const SliderProject = ({ images }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // +++ Vérifier si toutes les entrées sont des vidéos pour annuler l'autoplay du slide +++
-  const allVideos = images.every(image => image.type === 'video');
+  // +++ Stop autoplay on slider video +++
+  const allVideos = images.every((image) => image.type === "video");
+  // Vérifier si toutes les entrées sont des vidéos pour annuler l'autoplay du slide
 
   return (
     <>
@@ -35,10 +36,14 @@ const SliderProject = ({ images }) => {
         loop={images.length > 1}
         spaceBetween={0}
         modules={[Autoplay]}
-        autoplay={!allVideos ? {
-          delay: 3000,
-          disableOnInteraction: false,
-        } : false} // Désactive l'autoplay si toutes les entrées sont des vidéos
+        autoplay={
+          !isMobile && !allVideos
+            ? {
+                delay: 3000,
+                disableOnInteraction: false,
+              }
+            : false
+        } // Désactive l'autoplay si toutes les entrées sont des vidéos
         speed={700}
         onSwiper={(swiper) => setSwiper(swiper)}
       >
