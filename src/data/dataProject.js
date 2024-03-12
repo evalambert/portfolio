@@ -40,7 +40,10 @@ export const projects = [
     href: 'https://greta-oto.xyz/',
     images: 
       [
-        { src: 'greta-oto-website-bruxelles-greta-oto.mp4', type: 'video' },
+        {
+          src: 'greta-oto-website-bruxelles-greta-oto.mp4', type: 'video',
+          poster: "greta-oto-website-bruxelles-greta-oto-poster.jpg",
+        },
       ]
     
     },
@@ -68,7 +71,10 @@ export const projects = [
     lien: 'www.jlbv-studio.com',
     href: 'https://jlbv-studio.com/',
     images: [
-      { src: 'eva-lambert-website-jules-bouchier-vegis-jlbv-studio-bruxelle.mp4', type: 'video' },
+      {
+        src: 'eva-lambert-website-jules-bouchier-vegis-jlbv-studio-bruxelle.mp4', type: 'video',
+        poster: "eva-lambert-website-jules-bouchier-vegis-jlbv-studio-bruxelle-poster.jpg"
+      },
     ]
   }, 
   {
@@ -94,7 +100,10 @@ export const projects = [
     href: 'https://apollinelamoril.com/',
     lien: 'www.apollinelamoril.com',
     images: [
-      { src: 'eva-lambert-apolline-lamoril-website-marseille.mp4', type: 'video' },
+      {
+        src: 'eva-lambert-apolline-lamoril-website-marseille.mp4', type: 'video',
+        poster: "eva-lambert-apolline-lamoril-website-marseille-poster.jpg"
+      },
     ]
   },
   {
@@ -139,8 +148,11 @@ export const projects = [
     href: 'https://github.com/evalambert',
     images:
     [
-      { src: 'eva-lambert-becode-training-brm-bruxelles.mp4', type: 'video' },
-      { src: 'eva-lambert-becode-training-funnyfur-bruxelles.mp4', type: 'video' },
+      {
+        src: 'eva-lambert-becode-training-brm-bruxelles.mp4', type: 'video',
+        poster: "eva-lambert-becode-training-brm-bruxelles-poster.jpg"
+      },
+      { src: 'eva-lambert-becode-training-funnyfur-bruxelles.mp4', type: 'video', },
       { src: 'eva-lambert-becode-training-hot-doog-bruxelles.mp4', type: 'video' },
       { src: 'eva-lambert-becode-training-poddle-clicker-bruxelles.mp4', type: 'video' },
     ]

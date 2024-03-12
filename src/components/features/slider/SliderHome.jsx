@@ -61,6 +61,7 @@ function SliderHome({ isSliderVisible }) {
                   loop
                   muted
                   playsInline
+                  poster={image.poster}
                   className="h-3/4 border border-black rounded-[10px]"
                 >
                   <source src={image.src} type="video/mp4" />
