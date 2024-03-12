@@ -44,11 +44,14 @@ const SliderProject = ({ images }) => {
               {image.type === "image" ? (
                 <img src={image.src} alt={`Slide ${index}`} />
               ) : (
-                <div
-                  style={{ aspectRatio: "7 / 5" }}
-                  className="p-5 bg-black"
-                >
-                  <video autoPlay loop muted className="rounded-[6px]">
+                <div style={{ aspectRatio: "7 / 5" }} className="p-5 bg-black">
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="rounded-[6px]"
+                  >
                     <source src={image.src} type="video/mp4" />
                   </video>
                 </div>
