@@ -16,6 +16,7 @@
   {
     "type": "video",
     "src": "greta-oto-website-bruxelles-greta-oto.mp4",
+    "poster": "greta-oto-website-bruxelles-greta-oto-poster.jpg",
     "alt": "Greta oto website, Bruxelles",
     "orientation": "horizontal",
     "position": "center"
@@ -45,6 +46,7 @@
     "type": "video",
     "src": "eva-lambert-apolline-lamoril-website-marseille.mp4",
     "alt": "Apolline Lamoril website",
+    "poster": "eva-lambert-apolline-lamoril-website-marseille-poster.jpg",
     "orientation": "horizontal",
     "position": "center"
   },
@@ -60,6 +62,7 @@
     "type": "video",
     "src": "eva-lambert-website-jules-bouchier-vegis-jlbv-studio-bruxelle.mp4",
     "alt": "Jules Bouchier Vegis website, Bruxelles",
+    "poster": "eva-lambert-website-jules-bouchier-vegis-jlbv-studio-bruxelle-poster.jpg",
     "orientation": "horizontal",
     "position": "center"
   },

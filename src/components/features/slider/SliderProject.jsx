@@ -59,6 +59,7 @@ const SliderProject = ({ images }) => {
                     loop
                     muted
                     playsInline
+                    poster={images.poster}  
                     className="rounded-[6px]"
                   >
                     <source src={image.src} type="video/mp4" />
