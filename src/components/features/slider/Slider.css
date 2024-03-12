@@ -10,5 +10,20 @@
   .sliderHome img.horizontal {
     height: 100%;
   }
-  
-  
+
+@media (max-width: 768px) {
+  .sliderHome .swiper-slide img {
+    display: block; /* Élimine tout espace blanc sous l'image */
+    max-width: none; /* Permet à l'image d'atteindre sa pleine largeur naturelle */
+    width: auto; /* Permet à l'image de s'ajuster en largeur */
+    height: 100%; /* Ajuste la hauteur pour remplir le slide */
+    object-fit: contain; /* Assure que toute l'image est visible */
+    margin: auto; /* Centre l'image horizontalement et verticalement */
+    position: relative; /* Permet le centrage horizontal si nécessaire */
+    left: 50%; /* Déplace l'image à 50% du conteneur */
+    transform: translateX(-50%); /* Centre l'image horizontalement */
+  }
+}
+
+
+
