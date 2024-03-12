@@ -94,7 +94,7 @@ export const projects = [
     href: 'https://apollinelamoril.com/',
     lien: 'www.apollinelamoril.com',
     images: [
-      { src: 'eva-lambert-apolline-lamoril-website.mp4', type: 'video' },
+      { src: 'eva-lambert-apolline-lamoril-website-marseille.mp4', type: 'video' },
     ]
   },
   {
@@ -139,15 +139,28 @@ export const projects = [
     href: 'https://github.com/evalambert',
     images:
     [
-      { src: 'becode-training-brm-cinema-bruxelles.mp4', type: 'video' },
-      { src: 'becode-training-funnyfur-social-media-bruxelles-3.mp4', type: 'video' },
-      { src: 'becode-training-hot-doog-restaurant-bruxelles.mp4', type: 'video' },
-      { src: 'becode-training-poddle-clicker-bruxelles.mp4', type: 'video' },
+      { src: 'eva-lambert-becode-training-brm-bruxelles.mp4', type: 'video' },
+      { src: 'eva-lambert-becode-training-funnyfur-bruxelles.mp4', type: 'video' },
+      { src: 'eva-lambert-becode-training-hot-doog-bruxelles.mp4', type: 'video' },
+      { src: 'eva-lambert-becode-training-poddle-clicker-bruxelles.mp4', type: 'video' },
     ]
   },
   {
     id: 11,
     title: 'La Marche des monuments',
+    type: 'Performance',
+    year: '2014',
+    content: 'Anti-monumentalist demonstration for the Centenary of the Great War. Vocal performance guided by the artist Anaïs Scherrer, scenography assisted by Maria Flor Pinheiro. Scheduled in the performance cycle L’arme des mots part of the exhibition 1914, [[La mort des poètes]], Strasbourg',
+    href: 'https://github.com/evalambert',
+    images:
+    [
+      { src: 'eva-lambert-la-marche-des-monuments-strasbourg-1.jpg', type: 'image' },
+      { src: 'eva-lambert-la-marche-des-monuments-strasbourg-2.jpg', type: 'image' },
+    ]
+  },
+  {
+    id: 12,
+    title: 'Cade l‘uliva',
     type: 'Performance',
     year: '2014',
     content: 'Anti-monumentalist demonstration for the Centenary of the Great War. Vocal performance guided by the artist Anaïs Scherrer, scenography assisted by Maria Flor Pinheiro. Scheduled in the performance cycle L’arme des mots part of the exhibition 1914, [[La mort des poètes]], Strasbourg',
