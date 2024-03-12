@@ -41,26 +41,33 @@ const AccordionItem = React.memo(
     // Propriétés d'animation basées sur l'état ouvert/fermé
     const animateProps = isOpen ? { height: contentHeight } : { height: 0 };
 
-    // Fonction formatage texte souligné
+    // ++++ Fonction formatage texte souligné ++++
     function formatText(content) {
-      // Séparation du texte en segments basés sur les marqueurs
-      const parts = content.split(/(\[\[|\]\])/);
-      let isHighlighted = false; // Indicateur pour savoir si on est dans une portion à souligner
-      const formattedParts = parts.map((part, index) => {
-        if (part === '[[') {
-          isHighlighted = true; // Début d'une portion à souligner
-          return null; // On ne rend rien pour le marqueur lui-même
-        } else if (part === ']]') {
-          isHighlighted = false; // Fin d'une portion à souligner
-          return null; // On ne rend rien pour le marqueur lui-même
-        } else if (isHighlighted) {
-          return <span className="border-b border-black" key={index}>{part}</span>; // Rendre la portion soulignée
-        } else {
-          return part; // Rendre le texte normal
-        }
+      // Séparer le contenu en utilisant une regex qui capture le texte à souligner
+      const regex = /(\[\[(.*?)\]\])/g;
+      let parts = [];
+      let lastIndex = 0;
+
+      // Itérer sur toutes les correspondances de la regex pour construire le tableau de parties
+      content.replace(regex, (match, p1, p2, offset) => {
+        // Ajouter le texte avant le match
+        parts.push(content.substring(lastIndex, offset));
+        // Ajouter le texte souligné comme un élément React
+        parts.push(
+          <span className="border-b border-black" key={offset}>
+            {p2}
+          </span>
+        );
+        lastIndex = offset + match.length;
       });
-    
-      return <>{formattedParts}</>; // Rendre le tout comme un fragment React
+
+      // Ajouter le reste du contenu après le dernier match
+      if (lastIndex < content.length) {
+        parts.push(content.substring(lastIndex));
+      }
+
+      // Rendre le tableau d'éléments React
+      return <>{parts}</>;
     }
 
     return (
@@ -90,7 +97,7 @@ const AccordionItem = React.memo(
           {isContentVisible && ( // Afficher le contenu si visible
             <div className="content-work h-full w-full flex flex-col md:flex-row gap-4 py-3">
               <div className="md:w-1/2 flex flex-col gap-4">
-              <p>{formatText(content)}</p>
+                <p>{formatText(content)}</p>
                 <p>
                   <a className="border-b border-black" href={href}>
                     {lien}

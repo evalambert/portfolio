@@ -1,7 +1,7 @@
 // SliderHome.jsx
 import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import './Slider.css'
+import "./Slider.css";
 import "swiper/css";
 import imagesData from "../../../data/images.json";
 import Cursor from "../../common/cursor/Cursor";
@@ -28,10 +28,9 @@ function SliderHome({ isSliderVisible }) {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
-
 
   return (
     <>
@@ -61,6 +60,7 @@ function SliderHome({ isSliderVisible }) {
                   autoPlay
                   loop
                   muted
+                  playsInline
                   className="h-3/4 border border-black rounded-[10px]"
                 >
                   <source src={image.src} type="video/mp4" />
