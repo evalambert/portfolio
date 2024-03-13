@@ -12,20 +12,20 @@ En cours de création 🪵
 
 - Trouver un stage de deux mois en agence 🧃
 
-## 🌐 LANGUAGE UTILISÉ
+## 🌐 LANGUAGES & TECHNO UTILISÉS
 
-- Npm
 - React.js
 - Tailwind
 - Swiper
 - Framer motion
+- Npm
+
 
 ## 💾 INSTALLATION
 
 ```js
 npm i
 npm run dev
-npm run deploy
 ```
 
 ## 👀 MAQUETTE
