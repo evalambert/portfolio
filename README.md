@@ -2,7 +2,7 @@
 
 ## 🔗 LIEN VERS LE PROJET
 
-[https://evalambert.github.io/portfolio/](https://evalambert.github.io/portfolio/)
+[https://evalambert.xyz/](https://evalambert.xyz/)
 
 ## 🚧 ÉTAT D'AVANCEMENT
 
