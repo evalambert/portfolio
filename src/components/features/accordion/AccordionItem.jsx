@@ -99,7 +99,12 @@ const AccordionItem = React.memo(
               <div className="md:w-1/2 flex flex-col gap-4">
                 <p>{formatText(content)}</p>
                 <p>
-                  <a className="border-b border-black" href={href}>
+                  <a
+                    className="border-b border-black"
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     {lien}
                   </a>
                 </p>

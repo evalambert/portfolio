@@ -18,10 +18,10 @@ export default function About() {
         <section className="content-contact py-4 md:py-0">
           <h3>Contact</h3>
           <p>
-            <a href="mailto:lamberteva@hotmail.fr">evalambert@hotmail.fr</a>
+            <a href="mailto:lamberteva@hotmail.fr" target="_blank" rel="noreferrer">evalambert@hotmail.fr</a>
           </p>
           <p>
-            <a href="https://www.instagram.com/greta.oto__/?hl=fr">
+            <a href="https://www.instagram.com/greta.oto__/?hl=fr" target="_blank" rel="noreferrer">
               @greta.oto__
             </a>
           </p>
