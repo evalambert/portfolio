@@ -4,12 +4,7 @@ export default function About() {
       <div className="wrapper-txt h-full md:w-1/2 flex flex-col gap-4">
         <section className="content-txt  flex flex-col gap-3">
           <p>
-            I am a French graphic designer and creative web developer based in
-            Brussels. After graduating with a Master’s degree in Graphic Design
-            from HEAR, Strasbourg, in 2015, I have collaborated with cultural institutions, artists and others enthusiasts to develop visual identity, both
-            printed and digital matter. Since 2022, I have been part
-            of Greta Oto, a multidisciplinary graphic design studio, co-founded
-            with Alice Cadillon, who is interested in the performative potential of graphic objects
+          I am a French graphic designer and creative web developer based in Brussels. After graduating with a Master's degree in Graphic Design from HEAR Strasbourg in 2015, I have collaborated with cultural institutions, artists, and other enthusiasts to develop websites, create visual identities, posters, editions, type designs, and artworks. Since 2022, I have been part of Greta Oto, a multidisciplinary graphic design studio co-founded with Alice Cadillon, who is interested in the performative potential of graphic objects.
           </p>
           <p>
             I am currently enhancing my web development skills at BeCode, and am seeking an internship opportunity starting in April.
