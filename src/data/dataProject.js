@@ -82,7 +82,7 @@ export const projects = [
     title: 'Quard de virage nord-ouest',
     type: 'Publication, photography',
     year: '2014',
-    content: 'Close-up of the Ultra Boys 90 in the stadium stands of [[Racing Club]] of Strasbourg',
+    content: 'Close-up of the Ultra Boys 90 in the stadium stands of [[Racing Club of Strasbourg]]',
     images:
     [
       { src: 'eva-lambert-quart-devirage-nord-ouest-strasbourg-1.jpg', type: 'image' },
@@ -173,14 +173,12 @@ export const projects = [
   {
     id: 12,
     title: 'Cade l‘uliva',
-    type: 'Performance',
+    type: 'Type Design',
     year: '2014',
-    content: 'Anti-monumentalist demonstration for the Centenary of the Great War. Vocal performance guided by the artist Anaïs Scherrer, scenography assisted by Maria Flor Pinheiro. Scheduled in the performance cycle L’arme des mots part of the exhibition 1914, [[La mort des poètes]], Strasbourg',
-    href: 'https://github.com/evalambert',
+    content: 'Lettering for the video clip of [[Collectif LOUVES/]], written and produced by [[Flavie Torsielo]], Paris, 2022',
     images:
     [
-      { src: 'eva-lambert-la-marche-des-monuments-strasbourg-1.jpg', type: 'image' },
-      { src: 'eva-lambert-la-marche-des-monuments-strasbourg-2.jpg', type: 'image' },
+        { src: 'greta-oto-cade-l-uliva-collectif-louves-flavie-torsielo.mp4', type: 'video' },
     ]
   }
 ];
