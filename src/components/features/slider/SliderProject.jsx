@@ -37,7 +37,7 @@ const SliderProject = ({ images }) => {
         spaceBetween={0}
         modules={[Autoplay]}
         autoplay={
-          !isMobile && !allVideos
+          !allVideos
             ? {
                 delay: 3000,
                 disableOnInteraction: false,
