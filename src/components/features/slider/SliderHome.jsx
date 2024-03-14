@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./Slider.css";
 import "swiper/css";
+
+import { Autoplay } from "swiper/modules";
 import imagesData from "../../../data/images.json";
 import Cursor from "../../common/cursor/Cursor";
 
@@ -42,6 +44,15 @@ function SliderHome({ isSliderVisible }) {
         speed={1200}
         freeMode={isMobile}
         onSwiper={(swiper) => setSwiper(swiper)}
+        modules={[Autoplay]}
+        autoplay={
+          isMobile
+            ? {
+                delay: 4000,
+                disableOnInteraction: false,
+              }
+            : false
+        } 
         className="sliderHome h-full"
       >
         {imagesData.map((image, index) => (

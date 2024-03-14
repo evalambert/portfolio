@@ -45,7 +45,6 @@ export const projects = [
           poster: "greta-oto-website-bruxelles-greta-oto-poster.jpg",
         },
       ]
-    
     },
   {
     id: 4,
@@ -59,7 +58,6 @@ export const projects = [
         { src: 'eva-lambert-saint-eloi-marseille-2.jpg', type: 'image' },
         { src: 'eva-lambert-saint-eloi-marseille-6.jpg', type: 'image' },
         { src: 'eva-lambert-saint-eloi-marseille-7.jpg', type: 'image' },
-
     ]
   }, 
   {
@@ -118,7 +116,6 @@ export const projects = [
       { src: 'eva-lambert-wip-17-arles-2.jpg', type: 'image' },
       { src: 'eva-lambert-wip-17-arles-3.jpg', type: 'image' },
       { src: 'eva-lambert-wip-17-arles-4.jpg', type: 'image' },
-
     ]
   }, 
   {
