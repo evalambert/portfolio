@@ -140,7 +140,7 @@ export const projects = [
     title: 'BeCode',
     type: 'Web design, development',
     year: '2024',
-    content: 'Series of projects developed during my web development training at [[BeCode]], covering a wide range of skills from front-end to back-end, database management, and application deployment, all emphasized through teamwork and practical problem-solving.',
+    content: 'Series of projects completed during my intensive 7-month web development training at BeCode, where I learned to build modern web applications, both in team and individually. Specialized in front-end development with a foundational understanding of back-end concepts.',
     lien: '↘ GitHub page',
     href: 'https://github.com/evalambert',
     images:

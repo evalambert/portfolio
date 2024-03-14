@@ -5,7 +5,7 @@ export default function About() {
         <section className="content-txt  flex flex-col gap-3">
           <p>
             I am a French graphic designer and creative web developer based in
-            Brussels. After graduating with a Master's degree in Graphic Design
+            Brussels. After graduating with a Masters degree in Graphic Design
             from HEAR Strasbourg in 2015, I have collaborated with cultural
             institutions, artists, and other enthusiasts to develop websites,
             create visual identities, posters, editions, type designs, and
