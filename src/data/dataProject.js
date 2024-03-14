@@ -36,7 +36,7 @@ export const projects = [
     type: 'Web design, development',
     year: '2021',
     content: 'Design and development of the [[Greta Oto]] multidisciplinary graphic design studio‘s website, co-founded alongside Alice Cadillon, Bruxelles',
-    lien: 'www.greta-oto.xyz',
+    lien: '↘ www.greta-oto.xyz',
     href: 'https://greta-oto.xyz/',
     images: 
       [
@@ -68,7 +68,7 @@ export const projects = [
     type: 'Web design, development',
     year: '2024',
     content: 'Designing and developing the website for [[Jules Bouchier-Végis]], Bruxelles',
-    lien: 'www.jlbv-studio.com',
+    lien: '↘ www.jlbv-studio.com',
     href: 'https://jlbv-studio.com/',
     images: [
       {
@@ -98,7 +98,7 @@ export const projects = [
     year: '2022',
     content:'Website for the artist [[Apolline Lamoril]], Marseille', 
     href: 'https://apollinelamoril.com/',
-    lien: 'www.apollinelamoril.com',
+    lien: '↘ www.apollinelamoril.com',
     images: [
       {
         src: 'eva-lambert-apolline-lamoril-website-marseille.mp4', type: 'video',
@@ -144,7 +144,7 @@ export const projects = [
     type: 'Web design, development',
     year: '2024',
     content: 'Series of projects developed during my web development training at [[BeCode]], covering a wide range of skills from front-end to back-end, database management, and application deployment, all emphasized through teamwork and practical problem-solving.',
-    lien: 'My Github page',
+    lien: '↘ GitHub page',
     href: 'https://github.com/evalambert',
     images:
     [
@@ -162,8 +162,7 @@ export const projects = [
     title: 'La Marche des monuments',
     type: 'Performance',
     year: '2014',
-    content: 'Anti-monumentalist demonstration for the Centenary of the Great War. Vocal performance guided by the artist Anaïs Scherrer, scenography assisted by Maria Flor Pinheiro. Scheduled in the performance cycle L’arme des mots part of the exhibition 1914, [[La mort des poètes]], Strasbourg',
-    href: 'https://github.com/evalambert',
+    content: 'Anti-monumentalist demonstration for the Centenary of the Great War. Vocal performance guided by the artist Anaïs Scherrer, scenography assisted by Maria Flor Pinheiro. Scheduled in the performance cycle [[L’arme des mots]] part of the exhibition [[1914, La mort des poètes]], Strasbourg',
     images:
     [
       { src: 'eva-lambert-la-marche-des-monuments-strasbourg-1.jpg', type: 'image' },
@@ -174,7 +173,7 @@ export const projects = [
     id: 12,
     title: 'Cade l‘uliva',
     type: 'Type Design',
-    year: '2014',
+    year: '2022',
     content: 'Lettering for the video clip of [[Collectif LOUVES/]], written and produced by [[Flavie Torsielo]], Paris, 2022',
     images:
     [
