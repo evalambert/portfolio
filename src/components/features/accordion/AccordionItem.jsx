@@ -100,7 +100,7 @@ const AccordionItem = React.memo(
                 <p>{formatText(content)}</p>
                 <p>
                   <a
-                    className="border-b border-black"
+                    //className="border-b border-black"
                     href={href}
                     target="_blank"
                     rel="noreferrer"
