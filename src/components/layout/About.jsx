@@ -27,7 +27,7 @@ export default function About() {
             seeking an internship opportunity starting in April.
           </p>
         </section>
-        <section className="content-contact py-4 md:py-0">
+        <section className="content-contact">
           <p className="flex gap-4">
             <p className="flex gap-2">
             ↘
