@@ -52,7 +52,7 @@ function SliderHome({ isSliderVisible }) {
                 disableOnInteraction: false,
               }
             : false
-        } 
+        }
         className="sliderHome h-full"
       >
         {imagesData.map((image, index) => (
