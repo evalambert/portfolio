@@ -1,5 +1,7 @@
 # 🎨 PORTFOLIO
 
+WIP 🚧 Web developement and graphic design projects 👀 Take a look !
+
 ## 🔗 LIEN VERS LE PROJET
 
 [https://evalambert.xyz/](https://evalambert.xyz/)
