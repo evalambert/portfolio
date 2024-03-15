@@ -100,7 +100,7 @@ const AccordionItem = React.memo(
                 <p>{formatText(content)}</p>
                 <p>
                   <a
-                    //className="border-b border-black"
+                    className="border-b border-black"
                     href={href}
                     target="_blank"
                     rel="noreferrer"
@@ -109,7 +109,7 @@ const AccordionItem = React.memo(
                   </a>
                 </p>
               </div>
-              <div className="md:w-1/2 md:overflow-hidde">
+              <div className="md:w-1/2 md:overflow-hidden">
                 {images && Array.isArray(images) && (
                   <SliderTwo images={images} />
                 )}

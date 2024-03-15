@@ -1,3 +1,5 @@
+//Project.js 
+
 import { useState, useEffect } from "react";
 import { useSliderVisibility } from "../features/slider/SliderVisibilityContext";
 import Accordion from "../features/accordion/Accordion";
@@ -6,7 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import About from "./About";
 import Nav from "../common/Nav";
 
-export default function Project({ className }) {
+export default function Project({className}) {
   const { hideSlider, showSlider } = useSliderVisibility();
   const [activeSection, setActiveSection] = useState("");
   const [isExiting, setIsExiting] = useState(false); // Suivre si une sortie est en cours
