@@ -1,3 +1,86 @@
+/* //Project.js
+import { useState, useEffect } from "react";
+import { useSliderVisibility } from "../features/slider/SliderVisibilityContext";
+import Accordion from "../features/accordion/Accordion";
+import { projects } from "../../data/dataProject";
+import About from "./About";
+import Nav from "../common/Nav";
+import { motion } from "framer-motion"; // Import de Framer Motion
+
+export default function Project() {
+  const { hideSlider, showSlider } = useSliderVisibility();
+  const [activeSection, setActiveSection] = useState("");
+  const [isExiting, setIsExiting] = useState(false); // Suivre si une sortie est en cours
+
+  //  ———> Open Projects + Hide sliderHome
+  const handleSectionClick = (section) => {
+    if (activeSection === section) {
+      setActiveSection("");
+      setIsExiting(true);
+      showSlider();
+    } else {
+      setActiveSection(section);
+      hideSlider();
+    }
+  };
+
+  // ———> Close Projects + Show sliderHome
+  const handleCloseClick = () => {
+    setActiveSection("");
+    setIsExiting(true); // Commence l'animation de sortie
+    showSlider();
+  };
+
+  const borderClass = activeSection ? "border-t-[1px]" : "";
+
+  useEffect(() => {
+    if (!activeSection) {
+      // Si aucune section active, attendre la fin de l'animation pour réinitialiser
+      const timer = setTimeout(() => {
+        setIsExiting(false);
+      }, 200); // Durée totale animation + délai
+      return () => clearTimeout(timer);
+    }
+  }, [activeSection]);
+
+  const backgroundTransitionClass =
+    "transition-background duration-500 ease-in-out";
+
+  return (
+    <motion.section
+    key={activeSection}
+    initial={isExiting ? { y: 0 } : { y: "calc(100vh - 80px)" }}
+    animate={isExiting ? { y: "calc(100vh - 80px)" } : { y: 0 }}
+    className={`w-full absolute px-[10px] md:px-[20px] ${
+      activeSection
+        ? "top-[25px] md:top-[50px] h-screen"
+        : "bottom-[5px] md:bottom-[10px]"
+    } ${isExiting || activeSection ? "bg-white" : "bg-transparent"} ${
+      backgroundTransitionClass
+    }`}
+  >
+      <Nav
+        handleSectionClick={handleSectionClick}
+        handleCloseClick={handleCloseClick}
+        activeSection={activeSection}
+        borderClass={borderClass}
+      />
+      {activeSection && (
+        <main key={activeSection} className="overflow-scroll">
+          {activeSection === "Index" && <Accordion items={projects} />}
+          {activeSection === "Info" && <About />}
+        </main>
+      )}
+    </motion.section>
+  );
+} */
+
+
+
+
+
+
+
 
 /* I'm a French graphic designer and creative web developer based in Brussels, Belgium. Since obtaining my Graphic Design Master's degree from HEAR, Strasbourg in 2015, I have created visual identities, websites, posters, editions, type designs, and artworks in collaboration with cultural institutions, artists, businesses, and other enthusiasts. Since 2022, I have been working under the name Greta Oto, a multidisciplinary graphic design studio co-founded with Alice Cadillon.
 </p>

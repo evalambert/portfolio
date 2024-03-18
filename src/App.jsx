@@ -8,7 +8,7 @@ const App = () => {
   return (
     <SliderVisibilityProvider>
       <Home className="w-full h-screen fixed" />
-      <Project className="w-full absolute px-[10px] bottom-[5px] md:px-[20px] md:bottom-[10px] left-0" />
+      <Project />
     </SliderVisibilityProvider>
   );
 };
