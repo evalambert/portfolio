@@ -58,27 +58,3 @@ html {
 p {
   line-height: normal;
 }
-
-.section-content {
-  overflow: hidden;
-  max-height: 26px;
-  transition: max-height 2s cubic-bezier(0, 1, 0, 1);
-}
-.section-content.open{
-  max-height: 1000px;
-  transition: max-height 2s ease-in-out;
-}
-
-/* CSS pour l'animation d'ouverture/fermeture */
-.accordionContent {
-  overflow: hidden;
-  transition: max-height 0.5s ease-out;
-}
-
-.accordionContent.closed {
-  max-height: 0;
-}
-
-.accordionContent.open {
-  max-height: 500px; /* Ajustez en fonction de la hauteur maximale attendue de votre contenu */
-}
