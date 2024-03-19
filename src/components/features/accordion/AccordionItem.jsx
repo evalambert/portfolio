@@ -34,9 +34,9 @@ const AccordionItem = React.memo(
       return () => clearTimeout(timeoutId);
     }, [isOpen]);
 
-    const [contentHeight, setContentHeight] = useState("calc(100vh - 320px)");
+    //const [contentHeight, setContentHeight] = useState("calc(100vh - 320px)");
 
-    useEffect(() => {
+    /* useEffect(() => {
       const updateHeight = () => {
         if (
           window.matchMedia("(max-width: 1720px) and (max-height: 600px)")
@@ -97,8 +97,9 @@ const AccordionItem = React.memo(
       updateHeight();
 
       return () => window.removeEventListener("resize", updateHeight);
-    }, []);
+    }, []); */
 
+    const contentHeight = ("calc(90vh - 230px)");
     const animateProps = isOpen ? { height: contentHeight } : { height: 0 };
 
     // ++++ Fonction formatage texte souligné ++++
