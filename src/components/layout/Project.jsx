@@ -57,7 +57,7 @@ export default function Project() {
           activeSection={activeSection}
           borderClass={borderClass}
         />
-        <main className="overflow-scroll">
+        <main className="overflow-scroll border-red-500">
           {displayedSection === "index" && <Accordion items={projects} />}
           {displayedSection === "about" && <About />}
         </main>

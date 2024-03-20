@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <article className="w-full h-screen border flex flex-col pt-4 overflow-x-auto">
+    <article className="w-full flex flex-col pt-4 overflow-x-auto">
       <div className="md:w-1/2 flex flex-col gap-4 justify-between">
         <section className="flex flex-col gap-3">
           <p>

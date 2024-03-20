@@ -1,13 +1,15 @@
 .wrapper-section {
     width: 100%;
+    min-height: 25.5px;
     padding: 0 20px;
     position: absolute;
     top: calc(100% - 35px);
-    transition: top 500ms ease-in-out, background-color 500ms ease-in-out; 
+    transition: top 500ms ease-in-out, background-color 500ms ease-in-out, min-height 500ms ease-in-out ; 
     background-color: transparent; 
   }
   .wrapper-section.open {
     top: 65px;
     background-color: white; 
+    min-height: calc(100vh - 65px);
   }
 
