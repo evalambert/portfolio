@@ -17,11 +17,11 @@ const Nav = ({
           className="rotate3d-animation flex justify-center items-center"
           onClick={handleCloseClick}
           name="coeur"
-          aria-label="Fermer la section"
+          aria-label="fermer section"
         ></ButtonIcon>
         <div className="flex gap-2">
-          <button onClick={() => handleSectionClick("Index")}>Index</button>/
-          <button onClick={() => handleSectionClick("Info")}>About</button>
+          <button onClick={() => handleSectionClick("index")}>Index</button>/
+          <button onClick={() => handleSectionClick("about")}>About</button>
         </div>
       </nav>
       {activeSection ? (
@@ -29,7 +29,7 @@ const Nav = ({
           className="col-span-2 flex justify-end items-center"
           onClick={handleCloseClick}
           name="close"
-          aria-label="Fermer"
+          aria-label="fermer nav"
         ></ButtonIcon>
       ) : (
         <span className="col-span-2 flex justify-end">2024©</span>

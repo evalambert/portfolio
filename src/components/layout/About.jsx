@@ -1,8 +1,8 @@
 export default function About() {
   return (
-    <article className="wrapper-about h-[90vh] flex flex-col pt-4 overflow-x-auto">
-      <div className="wrapper-txt h-full md:w-1/2 flex flex-col gap-4 justify-between">
-        <section className="content-txt  flex flex-col gap-3">
+    <article className="w-full h-screen border flex flex-col pt-4 overflow-x-auto">
+      <div className="md:w-1/2 flex flex-col gap-4 justify-between">
+        <section className="flex flex-col gap-3">
           <p>
             I am a French graphic designer and creative web developer based in
             Brussels. After graduating with a Masters degree in Graphic Design
@@ -27,7 +27,7 @@ export default function About() {
             seeking an internship opportunity starting in April.
           </p>
         </section>
-        <section className="content-contact">
+        <section>
           <p className="flex gap-4">
             <p className="flex gap-2">
             ↘

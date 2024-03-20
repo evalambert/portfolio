@@ -1,10 +1,12 @@
-import Icon from './Icon';
+// ButtonIcon.jsx
+import Button from "./Button";
+import Icon from "./Icon";
 
 const ButtonIcon = ({ onClick, name, className }) => {
   return (
-    <button onClick={onClick} className={className}>
+    <Button onClick={onClick} className={className}>
       <Icon name={name} />
-    </button>
+    </Button>
   );
 };
 

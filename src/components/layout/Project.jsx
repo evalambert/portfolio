@@ -2,16 +2,30 @@ import { useState, useEffect } from "react";
 import { useSliderVisibility } from "../features/slider/SliderVisibilityContext";
 import Accordion from "../features/accordion/Accordion";
 import { projects } from "../../data/dataProject";
-import { motion, AnimatePresence } from "framer-motion";
 import About from "./About";
 import Nav from "../common/Nav";
+import "./style.css";
 
-export default function Project({ className }) {
+export default function Project() {
   const { hideSlider, showSlider } = useSliderVisibility();
   const [activeSection, setActiveSection] = useState("");
-  const [isExiting, setIsExiting] = useState(false); // Suivre si une sortie est en cours
+  const [displayedSection, setDisplayedSection] = useState("");
+  const [isExiting, setIsExiting] = useState(false);
 
-  //  ———> Open Projects + Hide sliderHome
+  // ++++ Retardement suppression du contenu ++++
+  useEffect(() => {
+    if (isExiting) {
+      const timer = setTimeout(() => {
+        setIsExiting(false);
+        setDisplayedSection("");
+      }, 500); // = durée de l'animation de sortie
+      return () => clearTimeout(timer);
+    } else if (activeSection) {
+      setDisplayedSection(activeSection);
+    }
+  }, [activeSection, isExiting]);
+
+  // ++++ Ouverture/Fermeture projets et gestion du sliderProject ++++
   const handleSectionClick = (section) => {
     if (activeSection === section) {
       setActiveSection("");
@@ -19,62 +33,36 @@ export default function Project({ className }) {
       showSlider();
     } else {
       setActiveSection(section);
+      setIsExiting(false);
       hideSlider();
     }
   };
 
-  // ———> Close Projects + Show sliderHome
+  // ++++ Fermeture explicite des projets ++++
   const handleCloseClick = () => {
     setActiveSection("");
-    setIsExiting(true); // Commence l'animation de sortie
+    setIsExiting(true);
     showSlider();
   };
 
   const borderClass = activeSection ? "border-t-[1px]" : "";
-
-  useEffect(() => {
-    if (!activeSection) {
-      // Si aucune section active, attendre la fin de l'animation pour réinitialiser
-      const timer = setTimeout(() => {
-        setIsExiting(false);
-      }, 200); // Durée totale animation + délai
-      return () => clearTimeout(timer);
-    }
-  }, [activeSection]);
-
-  const backgroundTransitionClass =
-    "transition-background duration-500 ease-in-out";
+  const topClass = activeSection ? "open" : "";
 
   return (
-    <section
-      className={`${className} ${
-        isExiting || activeSection ? "bg-white" : "bg-transparent"
-      } ${backgroundTransitionClass}`}
-    >
-      <Nav
-        handleSectionClick={handleSectionClick}
-        handleCloseClick={handleCloseClick}
-        activeSection={activeSection}
-        borderClass={borderClass}
-      />
-      <AnimatePresence onExitComplete={() => setIsExiting(false)}>
-        {/* Réinitialisation de isExiting à la fin de l'animation de sortie */}
-        {activeSection && (
-          <motion.main
-            key={activeSection}
-            initial={{ height: 0 }}
-            animate={{ height: "auto" }}
-            exit={{ height: 0 }}
-            transition={{
-              height: { duration: 0.5, delay: 0.1 },
-            }}
-            className="overflow-scroll"
-          >
-            {activeSection === "Index" && <Accordion items={projects} />}
-            {activeSection === "Info" && <About />}
-          </motion.main>
-        )}
-      </AnimatePresence>
-    </section>
+    <div className="w-screen h-screen">
+      <section className={`wrapper-section ${topClass}`}>
+        <Nav
+          handleSectionClick={handleSectionClick}
+          handleCloseClick={handleCloseClick}
+          activeSection={activeSection}
+          borderClass={borderClass}
+        />
+        <main className="overflow-scroll">
+          {displayedSection === "index" && <Accordion items={projects} />}
+          {displayedSection === "about" && <About />}
+        </main>
+      </section>
+    </div>
   );
 }
+
