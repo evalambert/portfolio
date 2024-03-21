@@ -16,7 +16,6 @@ const AccordionItem = React.memo(
     isOpen,
     onClick,
   }) => {
-
     const formatText = (text) => {
       return text.split(/\[\[(.*?)\]\]/g).map((part, index) =>
         index % 2 === 1 ? (
@@ -56,7 +55,7 @@ const AccordionItem = React.memo(
               transition={{ duration: 0.3, ease: "easeInOut" }}
               className="overflow-hidden"
             >
-              <div className="content-work h-full w-full flex flex-col md:flex-row gap-4 py-3">
+              <div className="content-work h-full w-full flex flex-col md:flex-row md:gap-4 py-3">
                 <div className="md:w-1/2 flex flex-col gap-4">
                   <p>{formatText(content)}</p>
                   <p>
@@ -82,7 +81,6 @@ const AccordionItem = React.memo(
 AccordionItem.displayName = "AccordionItem";
 
 export default AccordionItem;
-
 
 /* import React, { useRef, useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
