@@ -51,7 +51,9 @@ const SliderProject = ({ images }) => {
           return (
             <SwiperSlide key={index}>
               {image.type === "image" ? (
-                <img src={image.src} alt={`Slide ${index}`} />
+                <div style={{ aspectRatio: "7 / 5" }}>
+                  <img src={image.src} alt={`Slide ${index}`} />
+                </div>
               ) : (
                 <div style={{ aspectRatio: "7 / 5" }} className="p-5 bg-black">
                   <video

@@ -1,16 +1,21 @@
 // Accordion.js
-import { useState, useCallback } from "react";
+import { useState } from "react";
 import AccordionItem from "./AccordionItem";
 
 const Accordion = ({ items }) => {
   const [openItemId, setOpenItemId] = useState(null);
 
-  const toggleItem = useCallback(
+/*   const toggleItem = useCallback(
     (id) => {
       setOpenItemId(openItemId === id ? null : id);
     },
     [openItemId]
   );
+ */
+  
+  const toggleItem = (id) => {
+    setOpenItemId(openItemId === id ? null : id);
+  };
 
   return (
     <ul>

@@ -30,7 +30,7 @@ export default function About() {
         <section>
           <p className="flex gap-4">
             <p className="flex gap-2">
-            ↘
+              ↘
               <a
                 href="mailto:lamberteva@hotmail.fr"
                 target="_blank"
@@ -45,7 +45,6 @@ export default function About() {
               >
                 GitHub,
               </a>
-
               <a
                 href="https://www.linkedin.com/in/eva-lambert-38602a8b/"
                 target="_blank"
