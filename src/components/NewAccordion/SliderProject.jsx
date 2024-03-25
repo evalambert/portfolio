@@ -1,32 +1,20 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Cursor from "../common/cursor/Cursor";
-
-// Import Swiper styles
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 
-const NewSliderProject = ({ className, images }) => {
+const SliderProject = ({ className, images }) => {
   const [swiper, setSwiper] = useState(null);
   const [hoveredButton, setHoveredButton] = useState(null);
-  const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 768);
 
-  // +++ Image chang +++
+  // +++ Image change +++
   const handleImageChange = (direction) => {
     if (swiper && images.length > 1) {
       direction === "prev" ? swiper.slidePrev() : swiper.slideNext();
     }
   };
-
-  // +++ Mobile navigation +++
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   // +++ Stop autoplay on slider video +++
   const allVideos = images.every((image) => image.type === "video");
@@ -37,6 +25,7 @@ const NewSliderProject = ({ className, images }) => {
       loop={images.length > 1}
       spaceBetween={0}
       slidesPerView={1}
+      loading="lazy"
       modules={[Autoplay]}
       autoplay={
         !allVideos
@@ -73,21 +62,24 @@ const NewSliderProject = ({ className, images }) => {
           )}
         </SwiperSlide>
       ))}
-      {!isMobile && images.length > 1 && (
+      {images.length > 1 && (
         <>
           <button
-            className="absolute left-0 top-0 z-10 h-full w-1/2 cursor-none"
+            className="absolute left-0 top-0 z-10 h-full w-1/2 cursor-none md:block hidden"
+            aria-label="Previous slide"
             onMouseEnter={() => setHoveredButton("prev")}
             onMouseLeave={() => setHoveredButton(null)}
             onClick={() => handleImageChange("prev")}
           ></button>
           <button
-            className="absolute right-0 top-0 z-10 h-full w-1/2 cursor-none"
+            className="absolute right-0 top-0 z-10 h-full w-1/2 cursor-none md:block hidden"
+            aria-label="Next slide"
             onMouseEnter={() => setHoveredButton("next")}
             onMouseLeave={() => setHoveredButton(null)}
             onClick={() => handleImageChange("next")}
           ></button>
           <Cursor
+            className="md:block hidden"
             text={
               hoveredButton === "prev"
                 ? "Prev"
@@ -102,4 +94,4 @@ const NewSliderProject = ({ className, images }) => {
   );
 };
 
-export default NewSliderProject;
+export default SliderProject;
