@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body {
+  font-family: "Dongle", sans-serif;
+} */
+.App {
+  min-height: 100vh;
+/*   display: flex;
+  justify-content: center; */
+  border: 1px solid red;
+}
+.accordion__container {
+/*   display: flex;
+  flex-direction: column; */
+  margin-top: 25px;
+  border: 1px solid blue;
+}
+.accordion__item {
+/*   display: flex;
+  flex-direction: column; */
+  width: auto;
+  border-top: 1px solid black;
+}
+.accordion__header {
+  display: flex;
+  gap: 10px;
+/*   align-items: center; */
+  cursor: pointer;
+  padding: 10px;
+}
+.accordion__header:hover {
+  background: #e7eaed;
+}
+.accordion__id {
+  color: #ced4da;
+}
+.accordion__title {
+  flex: 1;
+}
+.accordion__details {
+  overflow: hidden;
+  height: 0;
+}
+.accordion__details ul {
+  padding: 1rem 2rem;
+  list-style-type: circle;
+}
+
+.open {
+  border-color: #087f5b;
+}
+
+.open .accordion__header,
+.open .accordion__id {
+  color: #087f5b;
+}
+
+.open .accordion__details {
+  height: auto;
+}
