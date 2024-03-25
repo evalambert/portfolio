@@ -19,6 +19,16 @@ const SliderProject = ({ className, images }) => {
   // +++ Stop autoplay on slider video +++
   const allVideos = images.every((image) => image.type === "video");
 
+  // +++ Autoplay config +++
+  const autoplayConfig = !allVideos
+  ? {
+      delay: 3000,
+      disableOnInteraction: false,
+    }
+    : false;
+  // Désactivation de l'autoplay si le projet n'est pas ouvert ou si toutes les images sont des vidéos
+
+
   return (
     <Swiper
       className={`${className}`}
@@ -27,14 +37,7 @@ const SliderProject = ({ className, images }) => {
       slidesPerView={1}
       loading="lazy"
       modules={[Autoplay]}
-      autoplay={
-        !allVideos
-          ? {
-              delay: 3000,
-              disableOnInteraction: false,
-            }
-          : false
-      } // Désactive l'autoplay si toutes les entrées sont des vidéos
+      autoplay={autoplayConfig} 
       speed={700}
       onSwiper={(swiper) => setSwiper(swiper)}
     >
