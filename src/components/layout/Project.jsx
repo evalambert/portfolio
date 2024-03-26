@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useSliderVisibility } from "../features/slider/SliderVisibilityContext";
-import Accordion from "../features/accordion/Accordion";
+import Accordion from "../NewAccordion/Accordion";
 import { projects } from "../../data/dataProject";
 import About from "./About";
 import Nav from "../common/Nav";

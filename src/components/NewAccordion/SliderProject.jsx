@@ -1,9 +1,8 @@
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
 import { useState } from "react";
-import Cursor from "../common/cursor/Cursor";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
+import Cursor from "../common/cursor/Cursor";
 
 const SliderProject = ({ className, images }) => {
   const [swiper, setSwiper] = useState(null);
@@ -18,16 +17,12 @@ const SliderProject = ({ className, images }) => {
 
   // +++ Stop autoplay on slider video +++
   const allVideos = images.every((image) => image.type === "video");
-
-  // +++ Autoplay config +++
   const autoplayConfig = !allVideos
-  ? {
-      delay: 3000,
-      disableOnInteraction: false,
-    }
+    ? {
+        delay: 3000,
+        disableOnInteraction: false,
+      }
     : false;
-  // Désactivation de l'autoplay si le projet n'est pas ouvert ou si toutes les images sont des vidéos
-
 
   return (
     <Swiper
@@ -37,7 +32,7 @@ const SliderProject = ({ className, images }) => {
       slidesPerView={1}
       loading="lazy"
       modules={[Autoplay]}
-      autoplay={autoplayConfig} 
+      autoplay={autoplayConfig}
       speed={700}
       onSwiper={(swiper) => setSwiper(swiper)}
     >
