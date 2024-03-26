@@ -8,7 +8,6 @@ export default {
       }, 
       fontFamily: {
         AgrandirGrandBold: ['AgrandirGrandBold', 'Helvetica', 'sans-serif'],
-        AgrandirVariable: ['AgrandirVariable', 'Helvetica', 'sans-serif'],
         AgrandirMedium: ['AgrandirMedium', 'Helvetica', 'sans-serif'],
         CartaNueva: ['CartaNueva', 'Times New Roman', 'serif'],
         FK: ['FK', 'Helvetica', 'sans-serif'],

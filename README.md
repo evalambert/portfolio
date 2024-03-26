@@ -17,7 +17,7 @@ En cours de création 🪵
 - React.js
 - Tailwind
 - Swiper
-- Framer motion
+- Gsap
 - Npm
 
 

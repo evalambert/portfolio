@@ -13,13 +13,10 @@
   background-color: white;
   min-height: calc(100vh - 65px);
 }
-
-
 @media (max-width: 768px) {
   .wrapper-section {
     top: calc(100% - 28px);
     padding: 0 10px;
-
   }
   .wrapper-section.open {
     top: 25px;

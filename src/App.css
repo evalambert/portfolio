@@ -21,15 +21,9 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "AgrandirMedium";
-  src: url("assets/fonts/Agrandir-Medium.woff2") format("woff2"),
-    url("assets/fonts/Agrandir-Medium.woff") format("woff");
-  font-weight: 500;
-}
-@font-face {
   font-family: "CartaNueva";
   src: url("assets/fonts/CartaNueva-Deck.woff2") format("woff2"),
-  url("assets/fonts/CartaNueva-Deck.woff") format("woff");
+    url("assets/fonts/CartaNueva-Deck.woff") format("woff");
 }
 @font-face {
   font-family: "FK";

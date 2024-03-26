@@ -1,19 +1,22 @@
 import { useState, useRef } from "react";
 import { gsap } from "gsap";
-import { projects } from "../../data/dataProject";
-import NewSliderProject from "./NewSliderProject";
-import "./NewAccordion.css";
+import { projects } from "../../../data/dataProject";
+import SliderProject from "../slider/SliderProject";
+import "./Accordion.css";
 
-export default function NewAccordion() {
+export default function Accordion() {
   const [openAccordion, setOpenAccordion] = useState(null);
   const accordionRefs = useRef([]);
 
+  // ++++ Ouverture/Fermeture des projets ++++
   const handleAccordionClick = (index) => {
+    const isMobile = window.matchMedia("(max-width: 480px)").matches;
     if (index === openAccordion) {
       gsap.to(
         accordionRefs.current[index].querySelector(".accordion__details"),
         {
           height: 0,
+          opacity: isMobile ? 0 : 1,
           duration: 0.5,
           ease: "power1.inOut",
           onComplete: () => setOpenAccordion(null),
@@ -27,6 +30,7 @@ export default function NewAccordion() {
           ),
           {
             height: 0,
+            opacity: isMobile ? 0 : 1,
             duration: 0.5,
             ease: "power1.inOut",
           }
@@ -35,9 +39,10 @@ export default function NewAccordion() {
       setOpenAccordion(index);
       gsap.fromTo(
         accordionRefs.current[index].querySelector(".accordion__details"),
-        { height: 0 },
+        { height: 0, opacity: 0 },
         {
           height: "auto",
+          opacity: 1,
           duration: 0.5,
           ease: "power1.inOut",
         }
@@ -45,18 +50,14 @@ export default function NewAccordion() {
     }
   };
 
-  // ++++ Fonction formatage texte souligné ++++
+  // ++++ Formatage soulignement du texte ++++
   function formatText(content) {
-    // Séparer le contenu en utilisant une regex qui capture le texte à souligner
     const regex = /(\[\[(.*?)\]\])/g;
     let parts = [];
     let lastIndex = 0;
-
-    // Itérer sur toutes les correspondances de la regex pour construire le tableau de parties
+  
     content.replace(regex, (match, p1, p2, offset) => {
-      // Ajouter le texte avant le match
       parts.push(content.substring(lastIndex, offset));
-      // Ajouter le texte souligné comme un élément React
       parts.push(
         <span className="border-b border-black" key={offset}>
           {p2}
@@ -64,13 +65,9 @@ export default function NewAccordion() {
       );
       lastIndex = offset + match.length;
     });
-
-    // Ajouter le reste du contenu après le dernier match
     if (lastIndex < content.length) {
       parts.push(content.substring(lastIndex));
     }
-
-    // Rendre le tableau d'éléments React
     return <>{parts}</>;
   }
 
@@ -78,7 +75,9 @@ export default function NewAccordion() {
     <div className="accordion__container">
       {projects.map((project, index) => (
         <div
-          className={`accordion__item ${openAccordion === index ? "open" : "close"}`}
+          className={`accordion__item ${
+            openAccordion === index ? "open" : "close"
+          }`}
           ref={(el) => (accordionRefs.current[index] = el)}
           key={project.id}
         >
@@ -112,7 +111,7 @@ export default function NewAccordion() {
               </p>
             </div>
             <div className="content__work__image md:w-1/2 pb-3 md:py-3">
-              <NewSliderProject
+              <SliderProject
                 className="aspect-[7/5]"
                 images={project.images}
                 isOpen={openAccordion === index}

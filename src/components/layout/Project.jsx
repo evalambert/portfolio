@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { useSliderVisibility } from "../features/slider/SliderVisibilityContext";
-import NewAccordion from "../NewAccordion/NewAccordion";
+import Accordion from "../features/accordion/Accordion";
 import About from "./About";
 import Nav from "../common/Nav";
-import "./style.css";
+import "./Project.css";
 
 export default function Project() {
   const { hideSlider, showSlider } = useSliderVisibility();
@@ -24,7 +24,7 @@ export default function Project() {
     }
   }, [activeSection, isExiting]);
 
-  // ++++ Ouverture/Fermeture projets et gestion du sliderProject ++++
+  // ++++ Ouverture/Fermeture About/Index et gestion du sliderProject ++++
   const handleSectionClick = (section) => {
     if (activeSection === section) {
       setActiveSection("");
@@ -37,7 +37,7 @@ export default function Project() {
     }
   };
 
-  // ++++ Fermeture explicite des projets ++++
+  // ++++ Fermeture explicite About/Index ++++
   const handleCloseClick = () => {
     setActiveSection("");
     setIsExiting(true);
@@ -56,12 +56,11 @@ export default function Project() {
           activeSection={activeSection}
           borderClass={borderClass}
         />
-        <main className="overflow-scroll border-red-500">
-          {displayedSection === "index" && <NewAccordion />}
+        <main className="overflow-scroll">
+          {displayedSection === "index" && <Accordion />}
           {displayedSection === "about" && <About />}
         </main>
       </section>
     </div>
   );
 }
-
