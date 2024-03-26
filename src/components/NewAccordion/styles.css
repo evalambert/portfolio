@@ -1,56 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.App {
-  min-height: 100vh;
-  border: 1px solid red;
-}
-.accordion__container {
-  margin-top: 25px;
-  border: 1px solid blue;
-}
-.accordion__item {
-  width: auto;
-  border-top: 1px solid black;
-}
-.accordion__header {
-  display: flex;
-  gap: 10px;
-  cursor: pointer;
-  padding: 10px;
+/* .accordion__container {
+  border: 1px solid #e77533;
 }
 .accordion__header:hover {
-  background: #e7eaed;
+  color: #e77533;
 }
 .accordion__id {
-  color: #ced4da;
-}
-.accordion__title {
-  flex: 1;
-}
+  color: #e77533;
+} */
 .accordion__details {
   overflow: hidden;
   height: 0;
 }
-.accordion__details ul {
-  padding: 1rem 2rem;
-  list-style-type: circle;
+/* .open {
+  border-color: #e77533;
 }
-
-.open {
-  border-color: #087f5b;
-}
-
 .open .accordion__header,
 .open .accordion__id {
-  color: #087f5b;
+  color: #e77533;
 }
-
+ */
 .open .accordion__details {
   height: auto;
 }
