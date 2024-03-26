@@ -1,12 +1,41 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import Cursor from "../common/cursor/Cursor";
 
-const NewSliderProject = ({ className, images }) => {
+const NewSliderProject = ({ className, images, isOpen }) => {
   const [swiper, setSwiper] = useState(null);
   const [hoveredButton, setHoveredButton] = useState(null);
+
+  // +++ Activate autoplay on open +++
+  useEffect(() => {
+    if (
+      swiper &&
+      swiper.autoplay &&
+      swiper.autoplay.start &&
+      swiper.autoplay.stop
+    ) {
+      if (isOpen) {
+        swiper.autoplay.start();
+      } else {
+        swiper.autoplay.stop();
+      }
+    }
+  }, [isOpen, swiper]);
+
+  // +++ Stop autoplay on slider video +++
+  const allVideos = images.every((image) => image.type === "video");
+  const autoplayConfig = !allVideos
+    ? { delay: 3000, disableOnInteraction: false }
+    : false;
+
+  // +++ Go to first slide when project is opened +++
+  useEffect(() => {
+    if (swiper && isOpen) {
+      swiper.slideTo(0, 0);
+    }
+  }, [isOpen, swiper]);
 
   // +++ Image change +++
   const handleImageChange = (direction) => {
@@ -14,15 +43,6 @@ const NewSliderProject = ({ className, images }) => {
       direction === "prev" ? swiper.slidePrev() : swiper.slideNext();
     }
   };
-
-  // +++ Stop autoplay on slider video +++
-  const allVideos = images.every((image) => image.type === "video");
-  const autoplayConfig = !allVideos
-    ? {
-        delay: 3000,
-        disableOnInteraction: false,
-      }
-    : false;
 
   return (
     <Swiper

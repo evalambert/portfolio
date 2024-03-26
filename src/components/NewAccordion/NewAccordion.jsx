@@ -69,7 +69,11 @@ export default function NewAccordion() {
             <div className="accordion__details flex">
               <div className="content w-1/2">{project.content}</div>
               <div className="w-1/2">
-                <NewSliderProject className="aspect-[7/5] border border-black" images={project.images} />
+                <NewSliderProject
+                  className="aspect-[7/5] border border-black"
+                  images={project.images}
+                  isOpen={openAccordion === index}
+                />
               </div>
             </div>
           </div>
