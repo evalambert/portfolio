@@ -1,6 +1,6 @@
 //App.jsx
 
-import Accordion from "./components/NewAccordion/Accordion";
+import Accordion from "./components/NewAccordion/NewAccordion";
 
 /* import { SliderVisibilityProvider } from "./components/features/slider/SliderVisibilityContext";
 import Home from "./components/layout/Home";

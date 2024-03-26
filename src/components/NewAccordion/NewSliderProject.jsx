@@ -1,11 +1,10 @@
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
 import { useState } from "react";
-import Cursor from "../common/cursor/Cursor";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
+import Cursor from "../common/cursor/Cursor";
 
-const SliderProject = ({ className, images }) => {
+const NewSliderProject = ({ className, images }) => {
   const [swiper, setSwiper] = useState(null);
   const [hoveredButton, setHoveredButton] = useState(null);
 
@@ -18,6 +17,12 @@ const SliderProject = ({ className, images }) => {
 
   // +++ Stop autoplay on slider video +++
   const allVideos = images.every((image) => image.type === "video");
+  const autoplayConfig = !allVideos
+    ? {
+        delay: 3000,
+        disableOnInteraction: false,
+      }
+    : false;
 
   return (
     <Swiper
@@ -27,14 +32,7 @@ const SliderProject = ({ className, images }) => {
       slidesPerView={1}
       loading="lazy"
       modules={[Autoplay]}
-      autoplay={
-        !allVideos
-          ? {
-              delay: 3000,
-              disableOnInteraction: false,
-            }
-          : false
-      } // Désactive l'autoplay si toutes les entrées sont des vidéos
+      autoplay={autoplayConfig}
       speed={700}
       onSwiper={(swiper) => setSwiper(swiper)}
     >
@@ -66,14 +64,12 @@ const SliderProject = ({ className, images }) => {
         <>
           <button
             className="absolute left-0 top-0 z-10 h-full w-1/2 cursor-none md:block hidden"
-            aria-label="Previous slide"
             onMouseEnter={() => setHoveredButton("prev")}
             onMouseLeave={() => setHoveredButton(null)}
             onClick={() => handleImageChange("prev")}
           ></button>
           <button
             className="absolute right-0 top-0 z-10 h-full w-1/2 cursor-none md:block hidden"
-            aria-label="Next slide"
             onMouseEnter={() => setHoveredButton("next")}
             onMouseLeave={() => setHoveredButton(null)}
             onClick={() => handleImageChange("next")}
@@ -94,4 +90,4 @@ const SliderProject = ({ className, images }) => {
   );
 };
 
-export default SliderProject;
+export default NewSliderProject;
