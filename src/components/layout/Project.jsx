@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useSliderVisibility } from "../features/slider/SliderVisibilityContext";
-import Accordion from "../features/accordion/Accordion";
-import { projects } from "../../data/dataProject";
+import NewAccordion from "../NewAccordion/NewAccordion";
 import About from "./About";
 import Nav from "../common/Nav";
 import "./style.css";
@@ -58,7 +57,7 @@ export default function Project() {
           borderClass={borderClass}
         />
         <main className="overflow-scroll border-red-500">
-          {displayedSection === "index" && <Accordion items={projects} />}
+          {displayedSection === "index" && <NewAccordion />}
           {displayedSection === "about" && <About />}
         </main>
       </section>

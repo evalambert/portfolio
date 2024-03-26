@@ -1,10 +1,10 @@
 import { useState, useRef } from "react";
 import { gsap } from "gsap";
-import { projects } from "../../data/dataProject";
-import NewSliderProject from "./NewSliderProject";
-import "./NewAccordion.css";
+import { projects } from "../../../data/dataProject";
+import SliderProject from "../slider/SliderProject";
+import "./accordion.css";
 
-export default function NewAccordion() {
+export default function Accordion() {
   const [openAccordion, setOpenAccordion] = useState(null);
   const accordionRefs = useRef([]);
 
@@ -19,6 +19,7 @@ export default function NewAccordion() {
           onComplete: () => setOpenAccordion(null),
         }
       );
+      console.log(openAccordion);
     } else {
       if (openAccordion !== null) {
         gsap.to(
@@ -75,10 +76,10 @@ export default function NewAccordion() {
   }
 
   return (
-    <div className="accordion__container">
+    <div className="accordion__container border border-red-300">
       {projects.map((project, index) => (
         <div
-          className={`accordion__item ${openAccordion === index ? "open" : "close"}`}
+          className={`accordion__item ${openAccordion === index ? "open" : ""}`}
           ref={(el) => (accordionRefs.current[index] = el)}
           key={project.id}
         >
@@ -112,7 +113,7 @@ export default function NewAccordion() {
               </p>
             </div>
             <div className="content__work__image md:w-1/2 pb-3 md:py-3">
-              <NewSliderProject
+              <SliderProject
                 className="aspect-[7/5]"
                 images={project.images}
                 isOpen={openAccordion === index}

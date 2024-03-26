@@ -1,0 +1,10 @@
+.accordion__details {
+  overflow: hidden;
+  height: 0;
+}
+.open .accordion__details {
+  height: auto;
+}
+.close .accordion__details {
+  height: 0;
+}
