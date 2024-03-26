@@ -56,7 +56,7 @@ export default function Project() {
           activeSection={activeSection}
           borderClass={borderClass}
         />
-        <main className="overflow-scroll">
+        <main className="h-full overflow-scroll">
           {displayedSection === "index" && <Accordion />}
           {displayedSection === "about" && <About />}
         </main>

@@ -20,5 +20,6 @@
   }
   .wrapper-section.open {
     top: 25px;
+    min-height: calc(100vh - 25px);
   }
 }
